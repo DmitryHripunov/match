@@ -1,0 +1,30 @@
+@import (reference) "../../less/variables.less";
+
+.burger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  &__row {
+    display: block;
+    width: 30px;
+    height: 3px;
+    border-radius: 1px;
+    background-color: @color-white;
+    margin: auto;
+  }
+
+  &__row:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: @laptop) {
+  .burger-btn {
+    padding: 14px 12px;
+
+    &__row {
+      background-color: @color-black;
+    }
+  }
+}

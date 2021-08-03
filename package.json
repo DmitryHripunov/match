@@ -1,7 +1,7 @@
 {
   "name": "site",
   "version": "1.0.0",
-  "description": "Верстка сайта ...",
+  "description": "Верстка сайта match",
   "repository": {
     "type": "git",
     "url": "https://github.com/SDim87/bundle-webpack3-less-vuejs"

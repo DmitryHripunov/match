@@ -1,0 +1,22 @@
+@import (reference) "../../less/variables.less";
+
+.logo {
+  display: block;
+
+  &__svg {
+    display: block;
+    width: 100px;
+    height: 45px;
+    fill: @color-white;
+  }
+}
+
+@media (min-width: @laptop) {
+  .logo {
+    &__svg {
+      width: 160px;
+      height: 70px;
+      fill: @color-black;
+    }
+  }
+}

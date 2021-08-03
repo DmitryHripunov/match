@@ -1,0 +1,49 @@
+@import (reference) "../../less/variables.less";
+
+.header {
+  padding: 10px 0;
+  background-color: @color-black;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__sidebar {
+    display: flex;
+    align-items: center;
+  }
+
+  &__phone,
+  &__btn {
+    display: none;
+  }
+
+  &__phone {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: @laptop) {
+  .header {
+    padding: 24px 0;
+    background-color: @color-white;
+
+    &__btn,
+    &__phone {
+      display: block;
+    }
+    
+    &__btn {
+      margin-right: 72px;
+    }
+
+    &__phone {
+      margin-right: 48px;
+      font-size: 24px;
+    }
+  }
+}

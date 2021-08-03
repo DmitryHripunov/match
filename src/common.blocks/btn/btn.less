@@ -1,0 +1,47 @@
+@import (reference) "../../less/variables.less";
+
+.btn {
+  font-family: "Montserrat";
+  cursor: pointer;
+	min-width: 100px;
+	white-space: nowrap;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	font-weight: 700;
+	font-size: 18px;
+	border-radius: 4px;
+  
+  &_secondary {
+    position: relative;
+    padding: 8px 24px;
+    // border: 2px solid transparent;
+    border-radius: 4px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -2px;
+      bottom: -2px;
+      left: -2px;
+      right: -2px;
+      background: @color-yellow-gradient;
+      border-radius: 4px;
+      z-index: -1;
+    }
+
+    &:hover {
+      border-color: @color-black;
+    }
+  }
+}
+
+@media (min-width: @laptop) {
+  .btn {
+
+    &_secondary {
+      padding: 16px 32px;
+    }
+  }
+}
