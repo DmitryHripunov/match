@@ -42,8 +42,31 @@
     }
 
     &__phone {
+      position: relative;
       margin-right: 48px;
       font-size: 24px;
+      transition: opacity 1.3s ease-in-out;
+
+      &::after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+
+      }
+      
+      &:hover {
+        background: @color-yellow-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        &::after {
+          opacity: 1;
+        }
+      }
     }
   }
 }
