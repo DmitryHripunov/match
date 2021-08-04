@@ -1,6 +1,7 @@
 @import (reference) "../../less/variables.less";
 
 .burger-btn {
+  position: relative;
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -12,16 +13,40 @@
     border-radius: 1px;
     background-color: @color-white;
     margin: auto;
+    transition: transform cubic-bezier(.26,.1,.27,1.55) .2s;
   }
 
   &__row:not(:last-child) {
     margin-bottom: 8px;
   }
+
+  &.is-active {
+    padding: 12px 0;
+    pointer-events: none;
+
+    .burger-btn__row:nth-child(1) {
+      transform: rotate(45deg);
+      margin: 0;
+    }
+    
+    .burger-btn__row:not(:first-child) {
+      transform: rotate(-45deg);
+      margin: -4px 0;
+    }
+
+    .burger-btn__row:nth-child(3) {
+      opacity: 0;
+    }
+   }
 }
 
 @media (min-width: @laptop) {
   .burger-btn {
     padding: 14px 12px;
+
+    &.is-active {
+      padding: 25px 12px;
+    }
 
     &__row {
       background-color: @color-black;

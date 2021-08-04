@@ -1,0 +1,112 @@
+@import (reference) "../../less/variables.less";
+
+.menu {
+  // padding: 40px 0 40px 0;
+  padding-bottom: 40px;
+  background: @color-black;
+  height: 100vh;
+  transform: translateY(-1px);
+  color: @color-white; //цвет для всего текста внутри меню 
+  display: none;
+  overflow-y: auto;
+
+  &_pt {
+      padding-top: 105px;
+  }
+
+  &.is-opened {
+    display: block;
+
+    .btn__caption {
+      color: @color-white;
+    }
+  }
+
+  &__nav-list {
+    margin-bottom: 32px;
+  }
+
+  &__nav-item:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &__nav-link {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 32px;
+
+    background: @color-animation-white-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    overflow: hidden;
+    background-size: 200%;
+    background-position: 0;
+    transition: background-position @transition;
+
+    &:hover {
+      background-position: -100% 100%;
+    }
+  }
+
+  &__nav-btn {
+    margin-bottom: 40px;
+  }
+
+  &__footer {
+    padding-top: 24px;
+    border-top: 2px solid rgba(255, 255, 255, .5);
+  }
+
+  &__mail-link,
+  &__tel-link {
+    font-family:"Montserrat";
+    font-weight: 700;
+    font-size: 18px;
+    display: block;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__mail-link {
+    margin-bottom: 16px;
+  }
+
+  &__tel-link {
+    margin-top: 16px;
+  }
+}
+
+@media (min-width: @laptop) {
+  .menu {
+    // padding-top: 160px;
+    padding-bottom: 140px;
+
+    &_pt {
+      padding-top: 278px;
+    }
+
+    &__nav-list {
+      margin-bottom: 170px;
+    }
+
+    &__nav-item:not(:last-child) {
+      margin-bottom: 56px;
+    }
+
+    &__nav-link {
+      font-size: 56px;
+    }
+
+    &__nav-btn {
+      display: none;
+    }
+
+    &__tel-link {
+      display: none;
+    }
+  }
+}
