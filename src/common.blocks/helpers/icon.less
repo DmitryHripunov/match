@@ -1,0 +1,20 @@
+@import (reference) "../../less/variables.less";
+
+.icon {
+  display: block;
+  flex: 0 0 auto;
+
+  &_white {
+    fill: @color-white;
+  }
+
+  &_size-m {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (min-width: @laptop) {
+  .icon {
+  }
+}

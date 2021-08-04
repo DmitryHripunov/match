@@ -1,4 +1,4 @@
-let lastScrollTop = 0;
+// let lastScrollTop = 0;
 
 // $(window).scroll(() => {
 //   const topPos = $('html').scrollTop();
@@ -9,14 +9,14 @@ let lastScrollTop = 0;
 //   }
 // });
 
-$('.menu').scroll(() => {
-  const menuTopPos = $('.menu').scrollTop();
-  if (menuTopPos > 80) {
-    $('.header').addClass('is-moved');
-  }
+// $('.menu').scroll(() => {
+//   const menuTopPos = $('.menu').scrollTop();
+//   if (menuTopPos > 80) {
+//     $('.header').addClass('is-moved');
+//   }
 
-  if (menuTopPos < lastScrollTop) {
-    $('.header').removeClass('is-moved');
-  }
-  lastScrollTop = menuTopPos;
-});
+//   if (menuTopPos < lastScrollTop) {
+//     $('.header').removeClass('is-moved');
+//   }
+//   lastScrollTop = menuTopPos;
+// });

@@ -5,16 +5,23 @@
   padding-bottom: 40px;
   background: @color-black;
   height: 100vh;
-  transform: translateY(-1px);
+  // transform: translateY(-1px);
   color: @color-white; //цвет для всего текста внутри меню 
   display: none;
   overflow-y: auto;
+  position: relative;
+  z-index: 5;
 
   &_pt {
-      padding-top: 105px;
+    padding-top: 105px;
   }
 
   &.is-opened {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: block;
 
     .btn__caption {
@@ -77,6 +84,7 @@
 
   &__tel-link {
     margin-top: 16px;
+    margin-bottom: 16px;
   }
 }
 
@@ -107,6 +115,12 @@
 
     &__tel-link {
       display: none;
+    }
+
+    &__footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
     }
   }
 }

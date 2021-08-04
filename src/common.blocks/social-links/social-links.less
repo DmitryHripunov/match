@@ -1,0 +1,41 @@
+
+@import (reference) "../../less/variables.less";
+
+.social-links {
+
+  &__list {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item:not(:last-child) {
+    margin-right: 16px;
+  }
+
+  &__link {
+    display: inline-block;
+    border: 1px solid @color-white;
+    border-radius: 4px;
+    padding: 8px;
+    background-color: transparent;
+    transition: background-color @transition, border-color @transition;
+
+    &_telegram:hover {
+      background-color: #039BE5;
+      border-color: #039BE5;
+    }
+    &_whatsap:hover {
+      background-color: #4CAF50;
+      border-color: #4CAF50;
+    }
+    &_viber:hover {
+      background-color: #9B51E0;
+      border-color: #9B51E0;
+    }
+  }
+}
+
+@media (min-width: @laptop) {
+  .social-links {
+  }
+}

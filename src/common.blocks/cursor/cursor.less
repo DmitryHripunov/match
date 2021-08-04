@@ -1,0 +1,36 @@
+
+@import (reference) "../../less/variables.less";
+.cursor {
+}
+
+@media (min-width: @laptop) {
+  *{cursor: none;}
+  .cursor {
+    position: fixed;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: 0;
+    z-index: 11;
+    
+    &__pointer {
+      border-radius: 50%;
+      background-color: @color-yellow;
+      width: 20px;
+      height: 20px;
+      opacity: .7;
+    }
+
+    &__follower {
+      position: fixed;
+      pointer-events: none;
+      top: -30px;
+      left: -30px;
+      border-radius: 50%;
+      background-color: transparent;
+      border: 2px solid @color-white;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

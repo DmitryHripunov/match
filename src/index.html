@@ -5,17 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Match agency</title>
+  <title>Match agency - совпадение нашего опыта и ваших ожиданий</title>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
+  <div class="cursor">
+    <div class="cursor__pointer"></div>
+    <div class="cursor__follower"></div>
+  </div>
+
   <div class="no-scrolling__overlay"></div>
 
   ${require('./common.blocks/header/header.html')}
 
   <main class="main">
-    
+    <div class="animated-text">
+      <div class="animated-text__top">Match agency</div>
+
+      <div class="animated-text__bottom">
+        совпадение нашего опыта и ваших ожиданий
+      </div>
+    </div>
+
+    <div class="page-section page-section_hero">
+      <div class="container container_mobile">
+        <video 
+          class="video" 
+          loop 
+          muted
+          autoplay
+          playsinline
+        >
+          <source src="https://cdn.dribbble.com/users/2428268/screenshots/16177532/media/f2e4b9ef30ace9826d34571a50eee3d1.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </div>
   </main>
 
   ${require('./common.blocks/footer/footer.html')}

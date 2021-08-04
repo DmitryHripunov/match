@@ -7,7 +7,7 @@ function hideModal(toggle, content, body, focus = null, switchingClass = null) {
     toggle.classList.remove('is-active');
     content.classList.remove('is-opened');
     if (switchingClass) {
-      switchingClass.classList.remove('menu-opened');
+      switchingClass.classList.remove('is-modified');
     }
 
     if (focus) {
@@ -24,7 +24,7 @@ function showModal(toggle, content, body, focus = null, switchingClass = null) {
   toggle.classList.add('is-active');
   content.classList.add('is-opened');
   if (switchingClass) {
-    switchingClass.classList.add('menu-opened');
+    switchingClass.classList.add('is-modified');
   }
 
   if (focus) {

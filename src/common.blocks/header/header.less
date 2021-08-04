@@ -5,7 +5,7 @@
   left: 0;
   top: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 10;
 
   padding: 10px 0;
   background-color: @color-black;
@@ -73,7 +73,7 @@
   }
 }
 
-.header.menu-opened {
+.header.is-modified {
   background: @color-black;
 
   .logo__svg {
@@ -106,5 +106,24 @@
 
   .btn__caption {
     color: @color-white;
+  }
+}
+
+@media (min-width: @laptop) {
+.header.is-modified {
+    &::after {
+      position: absolute;
+      pointer-events: none;
+      content: "";
+      top: 50vh;
+      left: 105%;
+      transform: translate(-50%, -50%);
+      width: 700px;
+      height: 500px;
+      border-radius: 50%;
+      background: @color-yellow-gradient;
+      filter: blur(200px);
+      z-index: -10;
+    }
   }
 }
