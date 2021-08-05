@@ -1,0 +1,14 @@
+@import (reference) "../../less/variables.less";
+
+.link {
+  color: @color-white;
+  
+}
+
+@media (min-width: @laptop) {
+	.link {
+		&_reverse {
+      color: @color-black;
+		}
+	}
+}

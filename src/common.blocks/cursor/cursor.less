@@ -1,11 +1,16 @@
 
 @import (reference) "../../less/variables.less";
 .cursor {
+  display: none;
 }
 
 @media (min-width: @laptop) {
-  *{cursor: none;}
+  * {
+    // cursor: auto;
+    // cursor: url(cursor1.png) 4 12, auto;
+  }
   .cursor {
+    display: block;
     position: fixed;
     width: 0;
     height: 0;

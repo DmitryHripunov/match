@@ -21,30 +21,162 @@
 
   <main class="main">
     <div class="animated-text">
-      <div class="animated-text__top">Match agency</div>
+      <div class="animated-text__wrapper">
+        <div class="animated-text__marquee-right">
+          <div class="animated-text__text">
+            Match agency
+          </div>
+        </div>
 
-      <div class="animated-text__bottom">
-        совпадение нашего опыта и ваших ожиданий
+        <div class="animated-text__marquee-right">
+          <div class="animated-text__text">
+            Match agency
+          </div>
+        </div>
+
+        <div class="animated-text__marquee-right">
+          <div class="animated-text__text">
+            Match agency
+          </div>
+        </div>
+
+        <div class="animated-text__marquee-right">
+          <div class="animated-text__text">
+            Match agency
+          </div>
+        </div>
+      </div>
+
+      <div class="animated-text__wrapper">
+        <div class="animated-text__marquee-left">
+          <div class="animated-text__text animated-text__text_colored">
+            совпадение нашего опыта и ваших ожиданий
+          </div>
+        </div>
+
+        <div class="animated-text__marquee-left">
+          <div class="animated-text__text animated-text__text_colored">
+            совпадение нашего опыта и ваших ожиданий
+          </div>
+        </div>
       </div>
     </div>
 
     <div class="page-section page-section_hero">
       <div class="container container_mobile">
-        <video 
-          class="video" 
-          loop 
-          muted
-          autoplay
-          playsinline
-        >
-          <source src="https://cdn.dribbble.com/users/2428268/screenshots/16177532/media/f2e4b9ef30ace9826d34571a50eee3d1.mp4" type="video/mp4" />
+        <video class="video" loop muted autoplay playsinline poster="./video-poster.jpg">
+          <source
+            src="https://cdn.dribbble.com/users/2428268/screenshots/16177532/media/f2e4b9ef30ace9826d34571a50eee3d1.mp4"
+            type="video/mp4" />
         </video>
       </div>
     </div>
+
+    <section class="page-section">
+      <div class="container container_small">
+        <div class="block-slogan">
+          <h1 class="block-slogan__title">
+            Match agency - это совпадение нашего опыта и ваших ожиданий. Помогая заказчику сделать качественный продукт
+            мы
+            выигрываем вместе с ним.
+          </h1>
+
+          <div class="block-slogan__wrapper">
+            <div class="block-slogan__inner">
+              <div class="block-desc">
+                <h2 class="block-desc__title">Миссия</h2>
+
+                <p class="block-desc__desc">
+                  14 лет работы в абсолютно разных сферах бизнеса позволяет нам решать самые сложные задачи в разных
+                  сфера. Новым
+                  компаниям мы помогаем заявить о себе в цифровом пространстве, а компаниям с историей внедрять
+                  севременные технологии
+                  и
+                  идти в ногу со временем.
+                </p>
+              </div>
+            </div>
+
+            <div class="block-slogan__inner">
+              <div class="block-desc">
+                <h2 class="block-desc__title">Клиенты</h2>
+
+                <p class="block-desc__desc">
+                  Мы умеем общаться с клиентом на одном языке, вникая в его бизнес-процессы, делаем правильные выводы и
+                  реализуем
+                  лучшие
+                  решения на основе нашего опыта.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="page-section page-section_black">
+      <div class="container">
+        <div class="title title_section title_white">Наши проекты</div>
+      </div>
+
+      <div class="projects">
+        <ul class="projects__list">
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <div class="projects__wrapper">
+                <div class="container">
+                  <div class="projects__desc-block">
+                    <div class="title title_block title_white_reverse">Интернет-магазин</div>
+
+                    <h3 class="projects__heading projects__heading_reverse">Сеть ювелирных салонов 
+                      <span class="projects__subtitle">«GRAF КОЛЬЦОВ»</span>
+                    </h3>
+
+                    <span class="link link_reverse projects__btn">Смотреть</span>
+                  </div>
+
+                </div>
+
+                <div class="container container_mobile">
+                  <div class="projects__img-block" style="background: #EAE3DB;">
+                    <img class="projects__img-bg" src="../src/static/progect_1/group_bg.png" alt="#">
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="projects__item">
+            <a href="#" class="projects__link">
+              <div class="projects__wrapper">
+                <div class="container">
+                  <div class="projects__desc-block">
+                    <div class="title title_block title_white">Корпоративный сайт</div>
+
+                    <h3 class="projects__heading">Салон мототехники
+                      <span class="projects__subtitle">«Мотор»</span>
+                    </h3>
+
+                    <span class="link projects__btn">Смотреть</span>
+                  </div>
+
+                </div>
+
+                <div class="container container_mobile">
+                  <div class="projects__img-block" style="background: url('./project_2.jpg') center / cover no-repeat">
+
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
   </main>
 
   ${require('./common.blocks/footer/footer.html')}
-  
+
   ${require('./common.blocks/menu/menu.html')}
 </body>
 

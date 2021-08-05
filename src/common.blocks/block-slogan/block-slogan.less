@@ -1,0 +1,39 @@
+@import (reference) "../../less/variables.less";
+
+.block-slogan {
+	&__title {
+		font-size: 18px;
+		line-height: 160%;
+		margin-bottom: 24px;
+	}
+
+	&__inner:first-child {
+		margin-bottom: 24px;
+	}
+}
+
+@media (min-width: @laptop) {
+	.block-slogan {
+		&__title {
+			font-size: 24px;
+			line-height: 150%;
+			margin-bottom: 56px;
+		}
+
+		&__wrapper {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+
+		&__inner:first-child {
+			margin-bottom: 0;
+			margin-right: 40px;
+		}
+
+		&__inner {
+			max-width: 570px;
+			width: 100%;
+		}
+	}
+}

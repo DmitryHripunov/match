@@ -1,0 +1,31 @@
+@import (reference) "../../less/variables.less";
+
+.title {
+	&_section {
+		margin-bottom: 24px;
+	}
+
+	&_block {
+		margin-bottom: 8px;
+	}
+
+	&_white {
+		color: @color-white;
+	}
+
+	&_white_reverse {
+		color: @color-white;
+	}
+}
+
+@media (min-width: @laptop) {
+	.title {
+		&_block {
+			margin-bottom: 32px;
+		}
+
+		&_white_reverse {
+			color: @color-black;
+		}
+	}
+}

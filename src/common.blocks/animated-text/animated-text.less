@@ -1,20 +1,67 @@
-
 @import (reference) "../../less/variables.less";
 
 .animated-text {
-  padding: 16px;
-  font-size: 32px;
-  font-family: "Montserrat";
-  font-weight: 700;
-  text-transform: uppercase;
-  white-space: nowrap;
-  overflow-x: hidden;
-  -webkit-text-stroke: 2px @color-yellow;
-  -webkit-text-fill-color: transparent;
+	padding: 16px;
+	font-size: 32px;
+	font-family: "Montserrat";
+	font-weight: 700;
+	text-transform: uppercase;
+	white-space: nowrap;
+	-webkit-text-stroke: 1px @color-yellow;
+	-webkit-text-fill-color: transparent;
+	line-height: 40px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+  }
+
+	&__marquee-right {
+    animation: marquee-right 10s infinite cubic-bezier(1, 1, 1, 1)
+	}
+
+	&__marquee-left {
+    animation: marquee-left 7s infinite cubic-bezier(1, 1, 1, 1)
+	}
+
+  &__text {
+    padding: 0 32px;
+  }
 }
 
 @media (min-width: @laptop) {
-  .animated-text {
-    font-size: 80px;
-  }
+	.animated-text {
+    margin-bottom: -110px;
+    -webkit-text-stroke: 2px @color-yellow;
+		font-size: 80px;
+		line-height: 96px;
+
+    &__text_colored {
+      background: @color-yellow-gradient;
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-stroke: 0 transparent;
+    }
+	}
+}
+
+@keyframes marquee-left {
+	0% {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes marquee-right {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	to {
+		transform: translateX(0);
+	}
 }
