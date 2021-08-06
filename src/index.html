@@ -121,6 +121,7 @@
 
       <div class="projects">
         <ul class="projects__list">
+          <!-- первый вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -134,19 +135,16 @@
 
                     <span class="link link_reverse projects__btn">Смотреть</span>
                   </div>
-
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block js-projects-parallax" style="background: #EAE3DB;">
-                    <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_1/group_bg.png" alt="#">
-
-                  </div>
+                  ${require('./common.blocks/parallax-block-1/parallax-block-1.html')}
                 </div>
               </div>
             </a>
           </li>
 
+          <!-- второй вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -160,19 +158,16 @@
 
                     <span class="link projects__btn">Смотреть</span>
                   </div>
-
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block js-projects-parallax"
-                    style="background: url('./project_2.jpg') center / cover no-repeat">
-                    <!-- <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_2.jpg" alt="#"> -->
-                  </div>
+                  ${require('./common.blocks/parallax-block-2/parallax-block-2.html')}
                 </div>
               </div>
             </a>
           </li>
 
+          <!-- третий вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -180,7 +175,7 @@
                   <div class="projects__desc-block">
                     <div class="title title_block title_white">Корпоративный сайт</div>
 
-                    <h3 class="projects__heading">Агентство недвижимости 
+                    <h3 class="projects__heading">Агентство недвижимости
                       <span class="projects__subtitle">«Риэлтор»</span>
                     </h3>
 
@@ -191,14 +186,18 @@
 
                 <div class="container container_mobile">
                   <div class="projects__img-block js-projects-parallax"
-                    style="background: url('./project_2.jpg') center / cover no-repeat">
-                    <!-- <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_2.jpg" alt="#"> -->
+                    style="background: url('./project_3/project_3.jpg') center / cover no-repeat">
+                    <div data-depth="0.6" class="projects__container-img">
+                      <img data-depth="0.3" class="projects__img-bg projects__img-bg_second " src="../src/static/project_3/p_3_bg_1.png" alt="#">
+                      <img data-depth="0.6" class="projects__img-bg projects__img-bg_second " src="../src/static/project_3/p_3_bg_2.png" alt="#">
+                    </div>
                   </div>
                 </div>
               </div>
             </a>
           </li>
 
+          <!-- второй вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -206,7 +205,7 @@
                   <div class="projects__desc-block">
                     <div class="title title_block title_white">Интернет портал</div>
 
-                    <h3 class="projects__heading">Социальный портал 
+                    <h3 class="projects__heading">Социальный портал
                       <span class="projects__subtitle">Пензенской области</span>
                     </h3>
 
@@ -217,22 +216,26 @@
 
                 <div class="container container_mobile">
                   <div class="projects__img-block js-projects-parallax"
-                    style="background: url('./project_2.jpg') center / cover no-repeat">
-                    <!-- <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_2.jpg" alt="#"> -->
+                    style="background: url('./project_4/project_4.jpg') center / cover no-repeat">
+                    <div data-depth="0.6" class="projects__container-img">
+                      <img data-depth="0.3" class="projects__img-bg projects__img-bg_second" src="../src/static/project_4/p_4_bg_1.png" alt="#">
+                      <img data-depth="0.6" class="projects__img-bg projects__img-bg_second" src="../src/static/project_4/p_4_bg_2.png" alt="#">
+                    </div>
                   </div>
                 </div>
               </div>
             </a>
           </li>
 
+          <!-- четвертый вариант анимации блока -->
           <li class="projects__item">
-            <a href="#" class="projects__link">
+            <a href="#" class="projects__link projects__link_scale">
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
                     <div class="title title_block title_white">Корпоративный сайт</div>
 
-                    <h3 class="projects__heading">Салон кухни 
+                    <h3 class="projects__heading">Салон кухни
                       <span class="projects__subtitle">«Нестандартные кухни»</span>
                     </h3>
 
@@ -242,15 +245,15 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block js-projects-parallax"
-                    style="background: url('./project_2.jpg') center / cover no-repeat">
-                    <!-- <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_2.jpg" alt="#"> -->
+                  <div class="projects__img-block js-projects-parallax" style="background: linear-gradient(90deg, #93948e 0%, #a1a29c 100%) ">
+                    <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_5/project_5.jpg" alt="#">
                   </div>
                 </div>
               </div>
             </a>
           </li>
 
+          <!-- пурвый??? вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -258,7 +261,7 @@
                   <div class="projects__desc-block">
                     <div class="title title_block title_white">Интернет-магазин</div>
 
-                    <h3 class="projects__heading">Сеть табачных изделий 
+                    <h3 class="projects__heading">Сеть табачных изделий
                       <span class="projects__subtitle">«Алькапоне»</span>
                     </h3>
 
@@ -269,8 +272,9 @@
 
                 <div class="container container_mobile">
                   <div class="projects__img-block js-projects-parallax"
-                    style="background: url('./project_2.jpg') center / cover no-repeat">
-                    <!-- <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_2.jpg" alt="#"> -->
+                    style="background: #432A25">
+                    <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_6/p_6_bg_1.png" alt="#">
+                    <img data-depth="0.6" class="projects__img-bg" src="../src/static/project_6/p_6_bg_2.png" alt="#">
                   </div>
                 </div>
               </div>
@@ -303,29 +307,30 @@
 
         <div class="desc-block">
           <h2 class="desc-block__title">Региональные цены</h2>
-  
+
           <p class="desc-block__desc">
             Мы находимся в регионе, а соответственно цена часа разработки составляет всего 1200р! Для сравнения цена в
             московских
             крупных студиях достигает 5000р за час! При разработке больших проектов эта разница в цене очень сильно
             заметна
           </p>
-  
+
           <h2 class="desc-block__title">14 лет опыта</h2>
-  
+
           <p class="desc-block__desc">
-            За 14 лет мы делали проекты практически в каждом сегменте бизнеса. Начиная от мебельных магазинов и заканчивая
+            За 14 лет мы делали проекты практически в каждом сегменте бизнеса. Начиная от мебельных магазинов и
+            заканчивая
             крупными
             гос. порталами. Ну разве что казино не разрабатывали, хотя и это нам под силу!
           </p>
-  
+
           <h2 class="desc-block__title">На одной волне</h2>
-  
+
           <p class="desc-block__desc">
             Мы прямо скажем как лучше сделать проект. Где нужно упростить, а где наоборот доработать. Наша цель - чтобы
             клиент не
             выкидывал деньги впустую, а смог преумножить их с помощью проекта.
-  
+
           </p>
         </div>
       </div>

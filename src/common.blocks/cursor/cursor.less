@@ -20,22 +20,24 @@
     
     &__pointer {
       border-radius: 50%;
-      background-color: @color-yellow;
-      width: 20px;
-      height: 20px;
+       pointer-events: none;
+      background-color: @color-red;
+      width: 8px;
+      height: 8px;
       opacity: .7;
     }
 
     &__follower {
       position: fixed;
       pointer-events: none;
-      top: -30px;
-      left: -30px;
+      top: -28px;
+      left: -28px;
       border-radius: 50%;
       background-color: transparent;
-      border: 2px solid @color-white;
-      width: 80px;
-      height: 80px;
+      border: 2px solid @color-red;
+      opacity: .7;
+      width: 60px;
+      height: 60px;
     }
   }
 }
