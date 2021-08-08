@@ -1,0 +1,100 @@
+@import (reference) "../../less/variables.less";
+
+.parallax-block-1 {
+  height: 100%;
+
+  &__inner {
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+
+    &_padding {
+      padding: 20px;
+    }
+  }
+
+  &__outer {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 120px;
+    width: 220px;
+
+    &_left {
+      left: 85%;
+      height: 100%;
+    }
+
+    &_fill {
+      top: 2%;
+      transform: none;
+      height: 100%;
+    }
+  }
+
+  &__img-gif {
+    width: 185px;
+    height: 106px;
+    padding: 8px 0px 0px 31px;
+    object-fit: cover;
+  }
+
+  &__img-bg {
+    transition: transform .06s ease-in-out;
+    &_fix_width {
+      margin: auto;
+      min-width: 80px;
+      max-width: 230px;
+      width: calc(100vw - 230px);
+      flex-shrink: 0;
+    }
+  }
+}
+
+@media (min-width: @tablet) {
+  .parallax-block-1 {
+    &__outer {
+      width: 560px;
+      height: 310px;
+
+      &_fill {
+        height: 100%;
+      }
+    }
+
+    &__img-gif {
+      width: 473px;
+      height: 270px;
+      padding: 20px 0px 0px 76px;
+    }
+  }
+}
+
+@media (min-width: @laptop) {
+  .parallax-block-1 {
+    max-width: 55%;
+    width: 100%;
+    margin-left: auto;
+
+    &__outer {
+      left: 75%;
+      
+      &_left {
+        left: 90%;
+      }
+    }
+
+    &__img-bg {
+      flex: 0 1 50%;
+      width: 50%;
+      object-fit: contain;
+
+      &_full {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

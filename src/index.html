@@ -20,42 +20,42 @@
   ${require('./common.blocks/header/header.html')}
 
   <main class="main">
-    <div class="animated-text">
-      <div class="animated-text__wrapper">
-        <div class="animated-text__marquee-right">
-          <div class="animated-text__text">
+    <div class="slogan">
+      <div class="slogan__wrapper">
+        <div class="slogan__marquee-right">
+          <div class="slogan__text">
             Match agency
           </div>
         </div>
 
-        <div class="animated-text__marquee-right">
-          <div class="animated-text__text">
+        <div class="slogan__marquee-right">
+          <div class="slogan__text">
             Match agency
           </div>
         </div>
 
-        <div class="animated-text__marquee-right">
-          <div class="animated-text__text">
+        <div class="slogan__marquee-right">
+          <div class="slogan__text">
             Match agency
           </div>
         </div>
 
-        <div class="animated-text__marquee-right">
-          <div class="animated-text__text">
+        <div class="slogan__marquee-right">
+          <div class="slogan__text">
             Match agency
           </div>
         </div>
       </div>
 
-      <div class="animated-text__wrapper">
-        <div class="animated-text__marquee-left">
-          <div class="animated-text__text animated-text__text_colored">
+      <div class="slogan__wrapper">
+        <div class="slogan__marquee-left">
+          <div class="slogan__text slogan__text_colored">
             совпадение нашего опыта и ваших ожиданий
           </div>
         </div>
 
-        <div class="animated-text__marquee-left">
-          <div class="animated-text__text animated-text__text_colored">
+        <div class="slogan__marquee-left">
+          <div class="slogan__text slogan__text_colored">
             совпадение нашего опыта и ваших ожиданий
           </div>
         </div>
@@ -121,7 +121,6 @@
 
       <div class="projects">
         <ul class="projects__list">
-          <!-- первый вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -138,13 +137,14 @@
                 </div>
 
                 <div class="container container_mobile">
-                  ${require('./common.blocks/parallax-block-1/parallax-block-1.html')}
+                  <div class="projects__img-block" style="background: #EAE3DB;">
+                    ${require('./common.blocks/parallax-block-1/parallax-block-1.html')}
+                  </div>
                 </div>
               </div>
             </a>
           </li>
 
-          <!-- второй вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -161,13 +161,22 @@
                 </div>
 
                 <div class="container container_mobile">
-                  ${require('./common.blocks/parallax-block-2/parallax-block-2.html')}
+                  <div class="projects__img-block"
+                    style="background: url('./project_2/project_2.jpg') center / cover no-repeat">
+                    <div class="parallax-block-1">
+                      <div class="parallax-block-1__inner parallax-block-1__inner_padding ">
+                        <img class="parallax-block-1__img-bg js-parallax" src="../src/static/project_2/p_2_bg_1.png"
+                          alt="#">
+                        <img class="parallax-block-1__img-bg parallax-block-1__img-bg_fix_width js-parallax"
+                          src="../src/static/project_2/p_2_bg_2.png" alt="#">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </a>
           </li>
 
-          <!-- третий вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -181,15 +190,19 @@
 
                     <span class="link projects__btn">Смотреть</span>
                   </div>
-
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block js-projects-parallax"
+                  <div class="projects__img-block"
                     style="background: url('./project_3/project_3.jpg') center / cover no-repeat">
-                    <div data-depth="0.6" class="projects__container-img">
-                      <img data-depth="0.3" class="projects__img-bg projects__img-bg_second " src="../src/static/project_3/p_3_bg_1.png" alt="#">
-                      <img data-depth="0.6" class="projects__img-bg projects__img-bg_second " src="../src/static/project_3/p_3_bg_2.png" alt="#">
+                    <div class="parallax-block-1">
+                      <div class="parallax-block-1__inner ">
+                        <img class="parallax-block-1__img-bg parallax-block-1__img-bg_full js-parallax"
+                          src="../src/static/project_3/p_3_bg_1.png" alt="#">
+
+                        <div class="parallax-block-1__outer parallax-block-1__outer_left"
+                          style="background: url('./project_3/p_3_bg_2.png') center / contain no-repeat;"></div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -197,7 +210,6 @@
             </a>
           </li>
 
-          <!-- второй вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -213,13 +225,17 @@
                   </div>
 
                 </div>
-
                 <div class="container container_mobile">
-                  <div class="projects__img-block js-projects-parallax"
+                  <div class="projects__img-block"
                     style="background: url('./project_4/project_4.jpg') center / cover no-repeat">
-                    <div data-depth="0.6" class="projects__container-img">
-                      <img data-depth="0.3" class="projects__img-bg projects__img-bg_second" src="../src/static/project_4/p_4_bg_1.png" alt="#">
-                      <img data-depth="0.6" class="projects__img-bg projects__img-bg_second" src="../src/static/project_4/p_4_bg_2.png" alt="#">
+                    <div class="parallax-block-1">
+                      <div class="parallax-block-1__inner parallax-block-1__inner_padding ">
+                        <img class="parallax-block-1__img-bg parallax-block-1__img-bg_full js-parallax" src="../src/static/project_4/p_4_bg_1.png"
+                          alt="#">
+                        <div class="parallax-block-1__outer parallax-block-1__outer_fill"
+                          style="background: url('./project_4/p_4_bg_2.png') center / contain no-repeat;">
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -227,7 +243,6 @@
             </a>
           </li>
 
-          <!-- четвертый вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link projects__link_scale">
               <div class="projects__wrapper">
@@ -245,7 +260,8 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block js-projects-parallax" style="background: linear-gradient(90deg, #93948e 0%, #a1a29c 100%) ">
+                  <div class="projects__img-block js-projects-parallax"
+                    style="background: linear-gradient(90deg, #93948e 0%, #a1a29c 100%) ">
                     <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_5/project_5.jpg" alt="#">
                   </div>
                 </div>
@@ -253,7 +269,6 @@
             </a>
           </li>
 
-          <!-- пурвый??? вариант анимации блока -->
           <li class="projects__item">
             <a href="#" class="projects__link">
               <div class="projects__wrapper">
@@ -271,8 +286,7 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block js-projects-parallax"
-                    style="background: #432A25">
+                  <div class="projects__img-block js-projects-parallax" style="background: #432A25">
                     <img data-depth="0.3" class="projects__img-bg" src="../src/static/project_6/p_6_bg_1.png" alt="#">
                     <img data-depth="0.6" class="projects__img-bg" src="../src/static/project_6/p_6_bg_2.png" alt="#">
                   </div>

@@ -1,6 +1,6 @@
 @import (reference) "../../less/variables.less";
 
-.animated-text {
+.slogan {
 	padding: 16px;
 	font-size: 32px;
 	font-family: "Montserrat";
@@ -18,11 +18,11 @@
   }
 
 	&__marquee-right {
-    animation: marquee-right 10s infinite cubic-bezier(1, 1, 1, 1)
+    animation: marquee-right 10s infinite linear;
 	}
 
 	&__marquee-left {
-    animation: marquee-left 7s infinite cubic-bezier(1, 1, 1, 1)
+    animation: marquee-left 7s infinite linear;
 	}
 
   &__text {
@@ -31,7 +31,7 @@
 }
 
 @media (min-width: @laptop) {
-	.animated-text {
+	.slogan {
     margin-bottom: -110px;
     -webkit-text-stroke: 2px @color-yellow;
 		font-size: 80px;
