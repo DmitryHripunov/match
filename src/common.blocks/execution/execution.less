@@ -1,0 +1,86 @@
+@import (reference) "../../less/variables.less";
+
+.execution {
+	color: @color-white;
+
+	&__list {
+		margin-bottom: 24px;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 24px;
+	}
+
+	&__link {
+		margin-bottom: 8px;
+		font-size: 24px;
+		line-height: 1.5;
+		font-family: 'Montserrat';
+		font-weight: 700;
+
+		&_colored {
+			background: @color-yellow-gradient;
+			background-clip: text;
+			-webkit-background-clip: text;
+			color: transparent;
+			white-space: nowrap;
+		}
+	}
+
+  &__desc {
+    &_indent {
+      margin-bottom: 16px;
+    }
+  }
+
+	&__aside-wrapper {
+		background-color: @color-black;
+		padding: 16px;
+		position: relative;
+		display: inline-block;
+	}
+}
+
+@media (min-width: @laptop) {
+	.execution {
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__list {
+			margin-bottom: 0;
+			margin-right: 24px;
+		}
+
+		&__item:not(:last-child) {
+			margin-bottom: 40px;
+		}
+
+		&__link {
+			margin-bottom: 16px;
+			font-size: 48px;
+		}
+
+		&__desc {
+			font-size: 16px;
+			max-width: 570px;
+
+      &_indent {
+        margin-bottom: 40px;
+      }
+		}
+
+		&__aside {
+			position: sticky;
+			top: 130px;
+			height: 100%;
+			flex: 0 1 570px;
+			max-width: 570px;
+		}
+
+		&__aside-wrapper {
+			padding: 40px;
+		}
+	}
+}

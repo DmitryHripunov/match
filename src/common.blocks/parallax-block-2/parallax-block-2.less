@@ -1,0 +1,40 @@
+@import (reference) "../../less/variables.less";
+
+.parallax-block-2 {
+	position: relative;
+
+	&__svg {
+		width: 210px;
+		height: 124px;
+		fill: @color-black;
+		margin-bottom: 16px;
+	}
+
+	&__svg-colored {
+		position: absolute;
+		z-index: -1;
+
+		&_g1 {
+			top: 36px;
+			left: 132px;
+		}
+
+		&_g2 {
+			top: -4px;
+			left: 97px;
+		}
+
+		&_g3 {
+			top: 17px;
+			left: 85px;
+		}
+	}
+}
+
+@media (min-width: @laptop) {
+	.parallax-block-2 {
+		&__svg {
+			margin-bottom: 32px;
+		}
+	}
+}

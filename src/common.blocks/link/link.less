@@ -1,14 +1,47 @@
 @import (reference) "../../less/variables.less";
 
 .link {
-  color: @color-white;
-  
+	color: @color-white;
+	font-size: 16px;
+	display: inline-flex;
+	align-items: center;
+	
+	&__svg {
+		width: 42px;
+		height: 14px;
+		fill: @color-white;
+		display: block;
+		margin-left: 8px;
+		transition: transform @transition;
+		
+		&_white_reverse {
+			fill: @color-black;
+		}
+
+		&_black {
+			fill: @color-black;
+		}
+	}
+
+	&_black {
+		color: @color-black;
+	}
+	
+	&:hover {
+		.link__svg {
+			transform: translateX(12px);
+		}
+	}
+
+	&_right {
+		float: right;
+	}
 }
 
 @media (min-width: @laptop) {
 	.link {
-		&_reverse {
-      color: @color-black;
+		&_white_reverse {
+			color: @color-black;
 		}
 	}
 }

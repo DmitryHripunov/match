@@ -1,0 +1,68 @@
+@import (reference) "../../less/variables.less";
+
+.about-block {
+	&__title {
+		position: relative;
+		text-transform: uppercase;
+		font-weight: 900;
+		line-height: 1;
+		font-size: calc((222 / 1920) * 100vw);
+		margin-bottom: 16px;
+		background: url("img/bg_logo_1.jpg") center / 100% no-repeat;
+		-webkit-text-fill-color: transparent;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		letter-spacing: 15px;
+		animation: slide-text 1s ease-in-out infinite;
+	}
+
+	&__subtitle {
+		max-width: 490px;
+		margin-bottom: 16px;
+	}
+}
+
+@media (min-width: @laptop) {
+	.about-block {
+		&__title {
+			white-space: nowrap;
+			margin-bottom: 48px;
+		}
+	}
+}
+
+@keyframes slide-text {
+	0 {
+		background: url("img/bg_logo_1.jpg") center / contain no-repeat;
+		-webkit-text-fill-color: transparent;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		letter-spacing: 15px;
+	}
+	25% {
+		background: url("img/bg_logo_2.jpg") center / 100% no-repeat;
+		-webkit-text-fill-color: transparent;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		letter-spacing: 15px;
+	}
+	50% {
+		background: url("img/bg_logo_3.jpg") center / 100% no-repeat;
+		-webkit-text-fill-color: transparent;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		letter-spacing: 15px;
+	}
+	75% {
+		background: url("img/bg_logo_4.jpg") center / 100% no-repeat;
+		-webkit-text-fill-color: transparent;
+		text-fill-color: transparent;
+		-webkit-background-clip: text;
+		background-clip: text;
+		letter-spacing: 15px;
+	}
+}
