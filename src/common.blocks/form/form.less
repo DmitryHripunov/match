@@ -1,0 +1,112 @@
+@import (reference) "../../less/variables.less";
+
+.form {
+	&__list {
+		margin-bottom: 24px;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 32px;
+	}
+
+  .help-block {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+  }
+
+  &__textarea-letter-count {
+    position: absolute;
+    right: 0;
+    top: 100%;
+  }
+
+  &__item {
+    position: relative;
+  }
+
+	&__item.has-error,
+  &__item.has-success {
+    .help-block {
+      display: block;
+    }
+	}
+
+	&__input,
+	&__textarea {
+		font: 400 16px "ptsans";
+		font-weight: normal;
+		padding: 8px 0;
+		line-height: 1;
+		width: 100%;
+		background: transparent;
+		border: none;
+		border-bottom: 2px solid @color-gray;
+		color: @color-white;
+
+		&::placeholder {
+			font-family: "Montserrat", sans-serif;
+			color: @color-gray;
+		}
+
+		&:focus {
+			outline: none;
+
+			+ .form__label {
+				transform: translateY(-140%);
+        font-size: 12px;
+
+         &_textarea {
+           top: 16px;
+         } 
+			}
+		}
+
+		&.is-focused + .form__label {
+			transform: translateY(-140%);
+      font-size: 12px;
+		}
+	}
+
+  &__textarea {
+    overflow: hidden;
+    display: block;
+    padding-bottom: 8px;
+    transition: height @transition;
+  }
+
+	&__label {
+		font-family: "Montserrat", sans-serif;
+		color: @color-gray;
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+    transition: transform @transition, font-size @transition;
+	}
+
+	&__submit {
+		margin-bottom: 8px;
+	}
+
+	&__footnote-link {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+@media (min-width: @laptop) {
+	.form {
+		&__list {
+			margin-bottom: 48px;
+		}
+
+		&__submit {
+			margin-bottom: 24px;
+		}
+	}
+}

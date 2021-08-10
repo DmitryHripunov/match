@@ -122,7 +122,7 @@
       <div class="projects">
         <ul class="projects__list">
           <li class="projects__item">
-            <a href="#" class="projects__link">
+            <a href="#" class="projects__link" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -143,7 +143,7 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block" style="background: #EAE3DB;">
+                  <div class="projects__img-block" data-client style="background: #EAE3DB;">
                     ${require('./common.blocks/parallax-block-1/parallax-block-1.html')}
                   </div>
                 </div>
@@ -152,7 +152,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link">
+            <a href="#" class="projects__link" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -172,7 +172,7 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block"
+                  <div class="projects__img-block" data-client
                     style="background: url('./project_2/project_2.jpg') center / cover no-repeat">
                     <div class="parallax-block-1">
                       <div class="parallax-block-1__inner parallax-block-1__inner_padding ">
@@ -189,7 +189,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link">
+            <a href="#" class="projects__link" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -209,7 +209,7 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block"
+                  <div class="projects__img-block" data-client
                     style="background: url('./project_3/project_3.jpg') center / cover no-repeat">
                     <div class="parallax-block-1">
                       <div class="parallax-block-1__inner ">
@@ -227,7 +227,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link">
+            <a href="#" class="projects__link" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -247,7 +247,7 @@
 
                 </div>
                 <div class="container container_mobile">
-                  <div class="projects__img-block"
+                  <div class="projects__img-block" data-client
                     style="background: url('./project_4/project_4.jpg') center / cover no-repeat">
                     <div class="parallax-block-1">
                       <div class="parallax-block-1__inner parallax-block-1__inner_padding ">
@@ -265,7 +265,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link projects__link_scale">
+            <a href="#" class="projects__link projects__link_scale" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -298,7 +298,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link">
+            <a href="#" class="projects__link" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -318,7 +318,7 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block" style="background: #432A25">
+                  <div class="projects__img-block" style="background: #432A25" data-client>
                     <div class="parallax-block-1">
                       <div class="parallax-block-1__outer parallax-block-1__outer_scale"
                         style="background: url('../project_6/p_6_bg_3.png') center right/ cover no-repeat;">
@@ -476,21 +476,22 @@
     </section>
 
     <section class="page-section page-section_huge_bottom">
-      <div class="container">
-        <div class="title title_section">Наши преимущества</div>
+      <div class="advantages">
+        <div class="container">
+          <div class="title title_section">Наши преимущества</div>
 
-        <h2 class="title title_h2 title_section">В чём наша сила?</h2>
+          <h2 class="title title_h2 title_section">В чём наша сила?</h2>
 
-        <div class="advantages">
           <div class="desc-block">
-            <ul class="advantages__list">
-              <li class="advantages__item">
+            <ul class="advantages__list" data-hover-icon>
+              <li class="advantages__item" data-client-icon>
                 <div class="parallax-block-2">
-                  <svg class="parallax-block-2__svg">
+                  <svg class="parallax-block-2__svg js-parallax-icon">
                     <use xlink:href="#adv_1_group_1"></use>
                   </svg>
 
-                  <svg class="parallax-block-2__svg-colored parallax-block-2__svg-colored_g1" width="58" height="68">
+                  <svg class="parallax-block-2__svg-colored 
+                    parallax-block-2__svg-colored_g1 js-parallax-icon" width="58" height="68">
                     <use xlink:href="#adv_1_group_2"></use>
                   </svg>
                 </div>
@@ -507,13 +508,14 @@
                 </p>
               </li>
 
-              <li class="advantages__item">
+              <li class="advantages__item" data-client-icon>
                 <div class="parallax-block-2">
-                  <svg class="parallax-block-2__svg">
+                  <svg class="parallax-block-2__svg js-parallax-icon">
                     <use xlink:href="#adv_2_group_1"></use>
                   </svg>
 
-                  <svg class="parallax-block-2__svg-colored parallax-block-2__svg-colored_g2" width="90" height="90">
+                  <svg class="parallax-block-2__svg-colored 
+                    parallax-block-2__svg-colored_g2 js-parallax-icon" width="90" height="90">
                     <use xlink:href="#adv_2_group_2"></use>
                   </svg>
                 </div>
@@ -527,13 +529,14 @@
                 </p>
               </li>
 
-              <li class="advantages__item">
-                <div class="parallax-block-2">
-                  <svg class="parallax-block-2__svg">
+              <li class="advantages__item" data-client-icon>
+                <div class="parallax-block-2 ">
+                  <svg class="parallax-block-2__svg js-parallax-icon">
                     <use xlink:href="#adv_3_group_1"></use>
                   </svg>
 
-                  <svg class="parallax-block-2__svg-colored parallax-block-2__svg-colored_g3" width="110" height="73">
+                  <svg class="parallax-block-2__svg-colored parallax-block-2__svg-colored_g3 js-parallax-icon"
+                    width="110" height="73">
                     <use xlink:href="#adv_3_group_2"></use>
                   </svg>
                 </div>
@@ -554,12 +557,6 @@
       </div>
     </section>
   </main>
-
-  <footer class="footer">
-    <div class="container">
-
-    </div>
-  </footer>
 
   ${require('./common.blocks/footer/footer.html')}
 

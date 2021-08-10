@@ -1,0 +1,60 @@
+@import (reference) "../../less/variables.less";
+
+.address {
+	font-style: normal;
+	display: inline-flex;
+	flex-direction: column;
+
+	&__city,
+	&__mail,
+	&__tel,
+	&__footnote {
+		margin-bottom: 8px;
+		display: inline-block;
+	}
+
+	&__city {
+		font-size: 16px;
+		line-height: 160%;
+	}
+
+	&__mail,
+	&__tel {
+		font-size: 18px;
+		line-height: 160%;
+		font-family: 'Montserrat';
+		font-weight: 700;
+	}
+
+	&__mail {
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__tel {
+		background: @color-yellow-gradient;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		transition: color @transition;
+
+		&:hover {
+			color: @color-yellow;
+		}
+	}
+}
+
+@media (min-width: @laptop) {
+	.address {
+		&__city {
+			margin-bottom: 24px;
+		}
+
+		&__mail,
+		&__tel {
+			line-height: 130%;
+      font-size: 32px;
+		}
+	}
+}

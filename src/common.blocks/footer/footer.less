@@ -1,0 +1,140 @@
+@import (reference) "../../less/variables.less";
+
+.footer {
+	padding: 56px 0;
+	background-color: @color-black;
+	color: @color-white;
+
+	&__title {
+		font-size: 24px;
+		line-height: 150%;
+		margin-bottom: 16px;
+	}
+
+	&__form {
+		margin-bottom: 48px;
+	}
+
+	&__address {
+		margin-bottom: 56px;
+	}
+
+	&__menu {
+		margin-bottom: 56px;
+	}
+
+	&__menu-list {
+		columns: 2;
+	}
+
+	&__menu-item:nth-child(odd) {
+		margin-bottom: 8px;
+	}
+
+	&__menu-link {
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 160%;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__bottom {
+    font-size: 12px;
+		padding-top: 16px;
+		border-top: 2px solid rgba(255, 255, 255, .5);
+	}
+
+	&__bottom-policy {
+		margin-bottom: 16px;
+	}
+
+  &__bottom-link {
+    display: block;
+    text-decoration: underline;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  &__bottom-link:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+@media (min-width: @laptop) {
+	.footer {
+		padding: 80px 0;
+
+		&__title {
+			font-size: 48px;
+			line-height: 120%;
+			margin-bottom: 48px;
+		}
+
+		&__wrapper {
+			display: flex;
+			margin-bottom: 92px;
+		}
+
+		&__form,
+		&__address {
+			margin-bottom: 0;
+      width: calc(100% / 3);
+		}
+
+		&__form,
+		&__address {
+			margin-right: 80px;
+		}
+
+		&__menu-list {
+			columns: 1;
+		}
+
+		&__menu-item:nth-child(odd) {
+			margin-bottom: 0;
+		}
+
+		&__menu-item:not(:last-child) {
+			margin-bottom: 16px;
+		}
+
+		&__bottom {
+      font-size: 14px;
+			padding-top: 24px;
+      display: flex;
+		}
+
+		&__bottom-policy {
+			margin-bottom: 0;
+      margin-right: 16px;
+      flex: 0 0 35%;
+		}
+
+    &__bottom-links {
+      display: flex;
+    }
+
+    &__bottom-link:not(:last-child) {
+      margin-bottom: 0;
+      padding-right: 10px;
+      margin-right: 8px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        right: 0;
+        top: 0;
+        content: "";
+        width: 2px;
+        height: 100%;
+        background: @color-white;
+      }
+    }
+	}
+}
