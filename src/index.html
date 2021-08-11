@@ -63,13 +63,11 @@
     </div>
 
     <div class="page-section page-section_hero">
-      <div class="container container_mobile">
-        <video class="video" loop muted autoplay playsinline poster="./video-poster.jpg">
-          <source
-            src="https://cdn.dribbble.com/users/2428268/screenshots/16177532/media/f2e4b9ef30ace9826d34571a50eee3d1.mp4"
-            type="video/mp4" />
-        </video>
-      </div>
+      <video class="video" loop muted autoplay playsinline poster="./video-poster.jpg">
+        <source
+          src="https://cdn.dribbble.com/users/2428268/screenshots/16177532/media/f2e4b9ef30ace9826d34571a50eee3d1.mp4"
+          type="video/mp4" />
+      </video>
     </div>
 
     <section class="page-section page-section_huge_bottom">
@@ -122,7 +120,7 @@
       <div class="projects">
         <ul class="projects__list">
           <li class="projects__item">
-            <a href="#" class="projects__link" data-hover>
+            <a href="#" class="projects__link js-data-hover" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -143,7 +141,7 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block" data-client style="background: #EAE3DB;">
+                  <div class="projects__img-block js-data-client" data-client style="background: #EAE3DB;">
                     ${require('./common.blocks/parallax-block-1/parallax-block-1.html')}
                   </div>
                 </div>
@@ -152,7 +150,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link" data-hover>
+            <a href="#" class="projects__link js-data-hover" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -172,7 +170,7 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block" data-client
+                  <div class="projects__img-block js-data-client" data-client
                     style="background: url('./project_2/project_2.jpg') center / cover no-repeat">
                     <div class="parallax-block-1">
                       <div class="parallax-block-1__inner parallax-block-1__inner_padding ">
@@ -189,7 +187,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link" data-hover>
+            <a href="#" class="projects__link js-data-hover" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -209,7 +207,7 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block" data-client
+                  <div class="projects__img-block js-data-client" data-client
                     style="background: url('./project_3/project_3.jpg') center / cover no-repeat">
                     <div class="parallax-block-1">
                       <div class="parallax-block-1__inner ">
@@ -227,7 +225,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link" data-hover>
+            <a href="#" class="projects__link js-data-hover" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -247,7 +245,7 @@
 
                 </div>
                 <div class="container container_mobile">
-                  <div class="projects__img-block" data-client
+                  <div class="projects__img-block js-data-client" data-client
                     style="background: url('./project_4/project_4.jpg') center / cover no-repeat">
                     <div class="parallax-block-1">
                       <div class="parallax-block-1__inner parallax-block-1__inner_padding ">
@@ -265,7 +263,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link projects__link_scale" data-hover>
+            <a href="#" class="projects__link projects__link_scale js-data-hover" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -298,7 +296,7 @@
           </li>
 
           <li class="projects__item">
-            <a href="#" class="projects__link" data-hover>
+            <a href="#" class="projects__link js-data-hover" data-hover>
               <div class="projects__wrapper">
                 <div class="container">
                   <div class="projects__desc-block">
@@ -318,7 +316,7 @@
                 </div>
 
                 <div class="container container_mobile">
-                  <div class="projects__img-block" style="background: #432A25" data-client>
+                  <div class="projects__img-block js-data-client" style="background: #432A25" data-client>
                     <div class="parallax-block-1">
                       <div class="parallax-block-1__outer parallax-block-1__outer_scale"
                         style="background: url('../project_6/p_6_bg_3.png') center right/ cover no-repeat;">
@@ -339,7 +337,7 @@
         </ul>
 
         <div class="container">
-          <a href="#" class="link link_right">
+          <a href="projects.html" class="link link_right">
             Все проекты
             <svg class="link__svg">
               <use xlink:href="#link-arrow"></use>
@@ -358,7 +356,7 @@
             <ul class="execution__list">
               <li class="execution__item">
                 <a href="#" class="execution__link">Лендинги
-                  <span class="execution__link execution__link_colored">от 100 000 ₽</span>
+                  <span class="execution__colored">от 100 000 ₽</span>
                 </a>
 
                 <p class="execution__desc">
@@ -370,7 +368,7 @@
 
               <li class="execution__item">
                 <a href="#" class="execution__link">Корпоративные сайты
-                  <span class="execution__link execution__link_colored">от 200 000 ₽</span>
+                  <span class="execution__colored">от 200 000 ₽</span>
                 </a>
 
                 <p class="execution__desc">
@@ -384,7 +382,7 @@
 
               <li class="execution__item">
                 <a href="#" class="execution__link">Интернет-магазины
-                  <span class="execution__link execution__link_colored">от 500 000 ₽</span>
+                  <span class="execution__colored">от 500 000 ₽</span>
                 </a>
 
                 <p class="execution__desc">
@@ -398,7 +396,7 @@
 
               <li class="execution__item">
                 <a href="#" class="execution__link">Мобильные приложения
-                  <span class="execution__link_colored">от 500 000 ₽</span>
+                  <span class="execution__colored">от 500 000 ₽</span>
                 </a>
 
                 <p class="execution__desc">

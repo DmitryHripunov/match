@@ -97,8 +97,10 @@
     }
   }
 
-  .btn_secondary:hover::after {
-    border-color: @color-white;
+  .btn_secondary:hover {
+    .btn__caption {
+      color: @color-black;
+    }
   }
 
   .burger-btn__row {
@@ -107,24 +109,17 @@
 
   .btn__caption {
     color: @color-white;
+    transition: color @transition;
+  }
+
+  .decoration-block_hidden {
+    display: block;
   }
 }
 
 @media (min-width: @laptop) {
 .header.is-modified {
     &::after {
-      position: absolute;
-      pointer-events: none;
-      content: "";
-      top: 50vh;
-      left: 105%;
-      transform: translate(-50%, -50%);
-      width: 700px;
-      height: 500px;
-      border-radius: 50%;
-      background: @color-yellow-gradient;
-      filter: blur(200px);
-      z-index: -10;
     }
   }
 }

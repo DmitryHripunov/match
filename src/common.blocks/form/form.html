@@ -1,27 +1,53 @@
 <form class="form js-form">
   <ul class="form__list">
     <li class="form__item">
-      <input name="full_name" id="full_name" class="form__input js-input" type="text">
+      <input id="full_name" class="form__input js-input" type="text">
+
       <label for="full_name" class="form__label">Как к вам обращаться?</label>
+
+      <!-- важно 3 дочерний элемент. -->
+      <div class="form__item-decoration"></div>
+
+      <span class="help-block">Телефон</span>
     </li>
 
     <li class="form__item has-success">
-      <input name="mail" id="mail" class="form__input js-input" type="email">
+      <input  id="mail" class="form__input js-input" type="email">
+
       <label for="mail" class="form__label">Электронная почта</label>
+
+      <!-- важно 3 дочерний элемент. -->
+      <div class="form__item-decoration"></div>
+
       <span class="help-block">Электронная почта</span>
     </li>
 
     <li class="form__item has-error">
-      <input name="phone" id="phone" class="form__input js-input" type="tel">
+      <input id="phone" class="form__input js-input" type="tel">
+
       <label for="phone" class="form__label">Телефон</label>
+
+      <!-- важно 3 дочерний элемент. -->
+      <div class="form__item-decoration"></div>
+
+      <div class="form__item-decoration"></div>
+
       <span class="help-block">Телефон</span>
     </li>
 
     <li class="form__item">
-      <textarea name="about" id="about" maxlength="220" class="form__textarea js-input"></textarea>
+      <textarea id="about" maxlength="220" class="form__textarea js-input"></textarea>
+
       <label for="about" class="form__label form__label_textarea ">Несколько слов о себе</label>
 
-      <div class="form__textarea-letter-count">0 / 220</div>
+      <!-- важно 3 дочерний элемент. -->
+      <div class="form__item-decoration"></div>
+
+      <span class="help-block">Телефон</span>
+
+      <div class="form__textarea-letter-count">
+        <span class="js-textarea-count">0</span>/ 220
+      </div>
     </li>
   </ul>
 

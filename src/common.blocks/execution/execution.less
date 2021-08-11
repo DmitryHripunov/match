@@ -12,26 +12,44 @@
 	}
 
 	&__link {
+		position: relative;
 		margin-bottom: 8px;
 		font-size: 24px;
 		line-height: 1.5;
 		font-family: 'Montserrat';
 		font-weight: 700;
 
-		&_colored {
+		&::after {
+			position: absolute;
+			content: "";
+			left: 0;
+			bottom: 0;
+			height: 2px;
+			width: 100%;
 			background: @color-yellow-gradient;
-			background-clip: text;
-			-webkit-background-clip: text;
-			color: transparent;
-			white-space: nowrap;
+			transform: scaleX(0);
+			transform-origin: left bottom;
+			transition: transform @transition;
+		}
+
+		&:hover::after {
+			transform: scaleX(1);
 		}
 	}
 
-  &__desc {
-    &_indent {
-      margin-bottom: 16px;
-    }
-  }
+	&__colored {
+		background: @color-yellow-gradient;
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
+		white-space: nowrap;
+	}
+
+	&__desc {
+		&_indent {
+			margin-bottom: 16px;
+		}
+	}
 
 	&__aside-wrapper {
 		background-color: @color-black;
@@ -66,9 +84,9 @@
 			font-size: 16px;
 			max-width: 570px;
 
-      &_indent {
-        margin-bottom: 40px;
-      }
+			&_indent {
+				margin-bottom: 40px;
+			}
 		}
 
 		&__aside {

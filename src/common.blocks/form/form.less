@@ -9,35 +9,52 @@
 		margin-bottom: 32px;
 	}
 
-  .help-block {
-    display: none;
-    position: absolute;
-    left: 0;
-    top: 100%;
-  }
+	.help-block {
+		display: none;
+		position: absolute;
+		left: 0;
+		top: 100%;
+	}
 
-  &__textarea-letter-count {
-    position: absolute;
-    right: 0;
-    top: 100%;
-  }
+	&__textarea-letter-count {
+		position: absolute;
+		right: 0;
+		top: 100%;
+	}
 
-  &__item {
-    position: relative;
-  }
+	&__item {
+		position: relative;
+	}
 
 	&__item.has-error,
-  &__item.has-success {
-    .help-block {
-      display: block;
-    }
+	&__item.has-success {
+		.help-block {
+			display: block;
+		}
+	}
+
+	&__item.has-error {
+		.form__input,
+		.form__textarea { 
+			border-color: @color-red;
+		}
+
+		.help-block {
+			color: @color-red;
+		}
+	}
+
+	&__item.has-success {
+		.help-block {
+			display: none;
+		}
 	}
 
 	&__input,
 	&__textarea {
 		font: 400 16px "ptsans";
 		font-weight: normal;
-		padding: 8px 0;
+		padding: 16px 0 8px 0;
 		line-height: 1;
 		width: 100%;
 		background: transparent;
@@ -55,26 +72,59 @@
 
 			+ .form__label {
 				transform: translateY(-140%);
-        font-size: 12px;
+				font-size: 12px;
 
-         &_textarea {
-           top: 16px;
-         } 
+				&_textarea {
+					top: 16px;
+				}
+			}
+
+			+ .form__label + .form__item-decoration {
+				transform: scaleX(1);
 			}
 		}
 
 		&.is-focused + .form__label {
 			transform: translateY(-140%);
-      font-size: 12px;
+			font-size: 12px;
+		}
+
+		&.is-focused + .form__label_textarea {
+			transform: translateY(-140%);
+			font-size: 12px;
+			top: 16px;
+		}
+
+		&.is-focused + .form__label + .form__item-decoration {
+			transform: scaleX(1);
+		}
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 2px;
+			background: @color-red;
+		}
+
+		&:hover 
+		+ .form__label {
+		+	.form__item-decoration {
+				transform: scaleX(1);
+			}
 		}
 	}
 
-  &__textarea {
-    overflow: hidden;
-    display: block;
-    padding-bottom: 8px;
-    transition: height @transition;
-  }
+	&__textarea {
+		overflow: hidden;
+		display: block;
+		margin-top: 36px;
+		padding-bottom: 8px;
+		padding-top: 8px;
+		height: 32px;
+		transition: height .05s ease-in-out;
+	}
 
 	&__label {
 		font-family: "Montserrat", sans-serif;
@@ -83,7 +133,7 @@
 		left: 0;
 		top: 50%;
 		transform: translateY(-50%);
-    transition: transform @transition, font-size @transition;
+		transition: transform @transition, font-size @transition;
 	}
 
 	&__submit {
@@ -96,6 +146,18 @@
 		&:hover {
 			text-decoration: none;
 		}
+	}
+
+	&__item-decoration {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		height: 2px;
+		width: 100%;
+		background: @color-yellow-gradient;
+		transform: scaleX(0);
+		transform-origin: left bottom;
+		transition: transform @transition;
 	}
 }
 

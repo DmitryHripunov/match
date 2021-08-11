@@ -14,15 +14,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   const textarea = document.querySelector('textarea');
+  const textareaCountLength = document.querySelector('.js-textarea-count');
 
-  function autosize() {
+  function autosize(e) {
     const el = this;
     // const elParent = el.closest('.form__item');
     setTimeout(() => {
-      el.style.cssText = 'height:auto;';
+      const lengthValue = e.target.value.length;
+      textareaCountLength.textContent = lengthValue;
       el.style.cssText = `height:${el.scrollHeight}px`;
+      if (el.value.trim().length < 1) {
+        el.style.height = '32px';
+      }
     }, 0);
   }
 
-  textarea.addEventListener('keyup', autosize);
+  textarea.addEventListener('input', autosize);
 });

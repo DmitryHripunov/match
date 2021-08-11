@@ -6,9 +6,9 @@
 
 @media (min-width: @laptop) {
   * {
-    // cursor: auto;
-    // cursor: url(cursor1.png) 4 12, auto;
+    cursor: none; 
   }
+
   .cursor {
     display: block;
     position: fixed;
@@ -38,6 +38,26 @@
       opacity: .5;
       width: 60px;
       height: 60px;
+      transition: background @transition;
+
+      &::after {
+        position: absolute;
+        content: 'click';
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        color: @color-red;
+        opacity: 0;
+        transition: opacity @transition;
+      }
+
+      &.is-hover {
+        background: @color-red;
+
+        &::after {
+          opacity: 1;
+        }
+      }
     }
   }
 }

@@ -13,15 +13,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (!curTarget.querySelector('.js-parallax-icon') || !parallax[0]) return;
 
-        const offsetX1 = ((e.clientX / (curSizes.clientWidth)) * 30) - 15;
-        const offsetY1 = ((e.clientY / (curSizes.clientHeight)) * 20) - 10;
-        const offsetX2 = ((e.clientX / (curSizes.clientWidth)) * 20) - 10;
-        const offsetY2 = ((e.clientY / (curSizes.clientHeight)) * 10) - 5;
+        const offsetX1 = ((e.clientX / (curSizes.clientWidth)) * 6) - 3;
+        const offsetY1 = ((e.clientY / (curSizes.clientHeight)) * 2) - 1;
+        const offsetX2 = ((e.clientX / (curSizes.clientWidth)) * 8) - 4;
+        const offsetY2 = ((e.clientY / (curSizes.clientHeight)) * 4) - 2;
 
         if (curTarget.querySelector('.js-parallax-icon')) {
           parallax[0].setAttribute(
             'style',
-            `transform: translate(${offsetX1}px, ${offsetY1}px) scale(1.05);`,
+            `transform: translate(${offsetX1}px, ${offsetY1}px);`,
           );
         }
         if (parallax[1]) {

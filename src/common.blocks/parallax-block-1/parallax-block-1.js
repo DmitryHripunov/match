@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
   if (window.innerWidth > 1024) {
-    const parallaxLinks = document.querySelectorAll('[data-hover]');
+    const parallaxLinks = document.querySelectorAll('.js-data-hover');
 
     parallaxLinks.forEach((link) => {
       const parallax = link.querySelectorAll('.js-parallax');
@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
       link.addEventListener('mousemove', (e) => {
         const curTarget = e.currentTarget;
-        const curSizes = curTarget.querySelector('[data-client]');
+        const curSizes = curTarget.querySelector('.js-data-client');
 
         if (!curTarget.querySelector('.js-parallax') || !parallax[0]) return;
 
-        const offsetX1 = ((e.clientX / (curSizes.clientWidth)) * 200) - 100;
-        const offsetY1 = ((e.clientY / (curSizes.clientHeight * 2)) * 160) - 80;
-        const offsetX2 = ((e.clientX / (curSizes.clientWidth)) * 30) - 15;
-        const offsetY2 = ((e.clientY / (curSizes.clientHeight)) * 30) - 15;
+        const offsetX1 = ((e.clientX / (curSizes.clientWidth)) * 20) - 10;
+        const offsetY1 = ((e.clientY / (curSizes.clientHeight * 4)) * 18) - 4;
+        const offsetX2 = ((e.clientX / (curSizes.clientWidth)) * 16) - 8;
+        const offsetY2 = ((e.clientY / (curSizes.clientHeight * 4)) * 16) - 3;
 
         if (curTarget.querySelector('.js-parallax')) {
           parallax[0].setAttribute(
             'style',
-            `transform: translate(${offsetX1}px, ${offsetY1}px) scale(1.05);`,
+            `transform: translate(${offsetX1}px, ${offsetY1}px);`,
           );
         }
 
