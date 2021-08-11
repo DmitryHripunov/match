@@ -1,16 +1,6 @@
 @import (reference) "../../less/variables.less";
 
 .slogan {
-	padding: 16px;
-	font-size: 32px;
-	font-family: "Montserrat";
-	font-weight: 700;
-	text-transform: uppercase;
-	white-space: nowrap;
-	-webkit-text-stroke: 1px @color-yellow;
-	-webkit-text-fill-color: transparent;
-	line-height: 40px;
-
   &__wrapper {
     display: flex;
     justify-content: flex-start;
@@ -26,21 +16,33 @@
 	}
 
   &__text {
-    padding: 0 32px;
+    padding: 0 16px;
+		font-size: 32px;
+		font-family: "Montserrat";
+		font-weight: 700;
+		text-transform: uppercase;
+		white-space: nowrap;
+		-webkit-text-stroke: 1px @color-yellow;
+		-webkit-text-fill-color: transparent;
+		line-height: 40px;
   }
 }
 
 @media (min-width: @laptop) {
 	.slogan {
-    margin-bottom: -110px;
-    -webkit-text-stroke: 2px @color-yellow;
-		font-size: 80px;
-		line-height: 96px;
+		margin-bottom: -110px;
+
+		&__text {
+			padding: 0 32px;
+			-webkit-text-stroke: 3px @color-yellow;
+			font-size: 80px;
+			line-height: 96px;
+		}
 
     &__text_colored {
-      background: @color-yellow-gradient;
-      background-clip: text;
-      -webkit-background-clip: text;
+			background: @color-yellow-gradient;
+			background-clip: text;
+			-webkit-background-clip: text;
       -webkit-text-stroke: 0 transparent;
     }
 	}

@@ -20,23 +20,40 @@
     margin-bottom: 8px;
   }
 
-  &.is-active {
+  &_close {
+    // display: none;
     padding: 12px 0;
-    pointer-events: none;
+    position: absolute;
+    z-index: -10;
+    left: -110%;
 
-    .burger-btn__row:nth-child(1) {
-      transform: rotate(45deg);
-      margin: 0;
-    }
-    
-    .burger-btn__row:not(:first-child) {
-      transform: rotate(-45deg);
-      margin: -4px 0 4px 0;
-    }
+    &.is-active {
+      position: relative;
+      z-index: 1;
+      left: auto;
+      // display: block;
+    &__row:not(:last-child) {
+        margin-bottom: 8px;
+      }
 
-    .burger-btn__row:nth-child(3) {
-      opacity: 0;
+      .burger-btn__row:nth-child(1) {
+        transform: rotate(45deg);
+        margin: 0;
+      }
+      
+      .burger-btn__row:not(:first-child) {
+        transform: rotate(-45deg);
+        margin: -4px 0 4px 0;
+      }
+
+      .burger-btn__row:nth-child(3) {
+        opacity: 0;
+      }
     }
+   }
+
+   &.is-hidden {
+     display: none;
    }
 }
 
@@ -44,7 +61,7 @@
   .burger-btn {
     padding: 14px 12px;
 
-    &.is-active {
+    &_close {
       padding: 25px 12px;
     }
 

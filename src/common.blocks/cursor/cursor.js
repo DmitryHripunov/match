@@ -15,7 +15,6 @@ document.addEventListener('DOMContentLoaded', () => {
     [...document.querySelectorAll('a')].forEach((item) => {
       item.addEventListener('mouseenter', () => {
         follow.classList.add('is-hover');
-        document.body.style.cursor = 'default';
       });
 
       item.addEventListener('mouseleave', () => {
@@ -26,7 +25,6 @@ document.addEventListener('DOMContentLoaded', () => {
     [...document.querySelectorAll('button')].forEach((item) => {
       item.addEventListener('mouseenter', () => {
         follow.classList.add('is-hover');
-        document.body.style.cursor = 'default';
       });
 
       item.addEventListener('mouseleave', () => {
@@ -37,7 +35,6 @@ document.addEventListener('DOMContentLoaded', () => {
     [...document.querySelectorAll('input')].forEach((item) => {
       item.addEventListener('mouseenter', () => {
         follow.classList.add('is-hover');
-        document.body.style.cursor = 'default';
       });
 
       item.addEventListener('mouseleave', () => {
@@ -48,7 +45,6 @@ document.addEventListener('DOMContentLoaded', () => {
     [...document.querySelectorAll('textarea')].forEach((item) => {
       item.addEventListener('mouseenter', () => {
         follow.classList.add('is-hover');
-        document.body.style.cursor = 'default';
       });
 
       item.addEventListener('mouseleave', () => {

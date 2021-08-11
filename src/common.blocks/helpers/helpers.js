@@ -1,4 +1,4 @@
-function hideModal(toggle, content, body, focus = null, switchingClass = null) {
+function hideModal(toggle, content, body, focus = null) {
   toggle.setAttribute('aria-expanded', false);
   content.setAttribute('aria-hidden', true);
 
@@ -6,9 +6,6 @@ function hideModal(toggle, content, body, focus = null, switchingClass = null) {
     body.classList.remove('no-scrolling');
     toggle.classList.remove('is-active');
     content.classList.remove('is-opened');
-    if (switchingClass) {
-      switchingClass.classList.remove('is-modified');
-    }
 
     if (focus) {
       focus.focus();
@@ -16,16 +13,13 @@ function hideModal(toggle, content, body, focus = null, switchingClass = null) {
   }
 }
 
-function showModal(toggle, content, body, focus = null, switchingClass = null) {
+function showModal(toggle, content, body, focus = null) {
   toggle.setAttribute('aria-expanded', true);
   content.setAttribute('aria-hidden', false);
 
   body.classList.add('no-scrolling');
   toggle.classList.add('is-active');
   content.classList.add('is-opened');
-  if (switchingClass) {
-    switchingClass.classList.add('is-modified');
-  }
 
   if (focus) {
     focus.focus();
