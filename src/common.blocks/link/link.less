@@ -5,7 +5,7 @@
 	font-size: 16px;
 	display: inline-flex;
 	align-items: center;
-	
+
 	&__svg {
 		width: 42px;
 		height: 14px;
@@ -13,7 +13,13 @@
 		display: block;
 		margin-left: 8px;
 		transition: transform @transition;
-		
+
+		&_reverse {
+			transform: rotate(-180deg);
+			margin-left: 0;
+			margin-right: 8px;
+		}
+
 		&_white_reverse {
 			fill: @color-black;
 		}
@@ -26,15 +32,22 @@
 	&_black {
 		color: @color-black;
 	}
-	
+
 	&:hover {
 		.link__svg {
 			transform: translateX(12px);
+		}
+		.link__svg_reverse {
+			transform: translateX(-12px) rotate(-180deg);
 		}
 	}
 
 	&_right {
 		float: right;
+	}
+
+	&_reverse {
+		flex-direction: row-reverse;
 	}
 }
 

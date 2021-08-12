@@ -1,26 +1,30 @@
 @import (reference) "../../less/variables.less";
 
 .container {
-  padding: 0 16px;
-  width: 100%;
-  margin: 0 auto;
+	padding: 0 16px;
+	width: 100%;
+	margin: 0 auto;
 
-  &_mobile {
-    padding: 0;
-  }
+	&_mobile {
+		padding: 0;
+	}
 }
 
 @media (min-width: @laptop) {
-  .container {
-    padding: 0 24px;
-    max-width: 1812px;
+	.container {
+		padding: 0 24px;
+		max-width: 1812px;
 
-    &_medium {
-     max-width: 1492px; 
-    }
+		&_medium {
+			max-width: 1492px;
+		}
 
-    &_small {
-     max-width: 1200px; 
-    }
-  }
+		&_small {
+			max-width: 1200px;
+		}
+
+		&_tiny {
+			max-width: 880px;
+		}
+	}
 }

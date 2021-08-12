@@ -66,12 +66,6 @@
 		border: none;
 		overflow: hidden;
 
-		.svg-gradient {
-			& rect {
-				stroke-width: 6 !important;
-			}
-		}
-
 		&::after {
 			content: "";
 			position: absolute;
@@ -101,12 +95,6 @@
 		&:focus {
 			&::before {
 				left: 0;
-			}
-
-			.svg-gradient {
-				& rect {
-					stroke-width: 0;
-				}
 			}
 		}
 	}

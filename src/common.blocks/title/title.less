@@ -1,6 +1,12 @@
 @import (reference) "../../less/variables.less";
 
 .title {
+	&_h1 {
+		line-height: 120%;
+		font-size: 32px;
+		margin-bottom: 32px;
+	}
+
 	&_section {
 		margin-bottom: 24px;
 	}
@@ -34,10 +40,23 @@
 		font-size: 18px;
 		line-height: 130%;
 	}
+
+	&__subtitle {
+		display: block;
+		margin-top: 16px;
+		font-size: 16px;
+		line-height: 150%;
+		max-width: 560px;
+	}
 }
 
 @media (min-width: @laptop) {
 	.title {
+		&_h1 {
+			font-size: 56px;
+			margin-bottom: 56px;
+		}
+
 		&_block {
 			margin-bottom: 32px;
 		}
@@ -57,6 +76,11 @@
 
 		&_h4 {
 			font-size: 32px;
+		}
+
+		&__subtitle {
+			font-size: 24px;
+			margin-top: 24px;
 		}
 	}
 }

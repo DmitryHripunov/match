@@ -31,12 +31,26 @@ document.addEventListener('DOMContentLoaded', () => {
         className: 'menu is-opened',
       })
       .set('.header', {
-        className: 'header is-modified',
+        className: 'header header_black is-modified',
       })
-      .set(['.menu__nav-btn', '.menu__footer', '.js-item-1', '.js-item-2', '.js-item-3', '.js-item-4'], {
+      .set([
+        '.menu__nav-btn',
+        '.js-item-1',
+        '.js-item-2',
+        '.js-item-3',
+        '.js-item-4',
+        '.social-links',
+        '.menu__mail-link',
+        '.menu__tel-link',
+      ], {
         opacity: 0,
         translateY: 50,
         ease: 'power1',
+      })
+      .set(['.menu__footer'], {
+        opacity: 0,
+        translateX: '-100%',
+        ease: 'back',
       })
       .to('.js-menu', {
         translateY: 0,
@@ -48,7 +62,16 @@ document.addEventListener('DOMContentLoaded', () => {
       .to('.js-item-3', options)
       .to('.js-item-4', options)
       .to('.menu__nav-btn', options)
-      .to('.menu__footer', options)
+      .to('.menu__footer', {
+        opacity: 1,
+        translateX: 0,
+        delay: -0.2,
+        duration: 0.3,
+        ease: 'power1',
+      })
+      .to('.menu__mail-link', options)
+      .to('.menu__tel-link', options)
+      .to('.social-links', options)
       .to('.decoration-block', {
         opacity: 1,
         delay: 0,

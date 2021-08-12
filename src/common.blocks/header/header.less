@@ -74,7 +74,7 @@
   }
 }
 
-.header.is-modified {
+.header.header_black {
   background: @color-black;
 
   .logo__svg {
@@ -112,7 +112,9 @@
     transition: color @transition;
   }
 
-  .decoration-block_hidden {
-    display: block;
+  &.is-modified {
+    .decoration-block_hidden {
+      display: block;
+    }
   }
 }

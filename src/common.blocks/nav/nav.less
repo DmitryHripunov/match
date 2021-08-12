@@ -1,0 +1,65 @@
+@import (reference) "../../less/variables.less";
+
+.nav {
+	&__wrapper {
+		display: flex;
+		align-items: center;
+    flex-direction: column;
+	}
+
+	&__current {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+    order: 1;
+	}
+
+	&__developer,
+	&__current-label {
+		font-size: 16px;
+		line-height: 1;
+	}
+
+	&__current-label {
+		padding: 8px 16px;
+		border: 1px solid @color-black;
+		border-radius: 4px;
+		margin-bottom: 8px;
+		white-space: nowrap;
+	}
+
+	&__developer {
+		text-decoration: underline;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+  &__link {
+    margin-bottom: 24px;
+  }
+}
+
+@media (min-width: @laptop) {
+	.nav {
+    &__wrapper {
+      flex-direction: row;
+		  justify-content: space-between;
+    }
+
+		&__current {
+			flex-direction: row;
+      order: 0;
+		}
+
+		&__current-label {
+			margin-bottom: 0;
+			margin-right: 24px;
+		}
+
+    &__link {
+      margin-bottom: 0;
+    }
+	}
+}

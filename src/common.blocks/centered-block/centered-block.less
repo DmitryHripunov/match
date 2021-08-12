@@ -1,0 +1,43 @@
+@import (reference) "../../less/variables.less";
+
+.centered-block {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	margin: 24px auto;
+
+  &_no_indent {
+    margin: 0 auto;
+  }
+
+	&__link {
+		display: block;
+		font-size: 16px;
+		line-height: 1.6;
+		margin-bottom: 8px;
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&_bold {
+      font-size: 18px;
+			font-weight: 700;
+			text-decoration: underline;
+
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+@media (min-width: @laptop) {
+	.centered-block {
+		margin: 56px auto;
+
+    &_no_indent {
+      margin: 0 auto;
+    }
+	}
+}

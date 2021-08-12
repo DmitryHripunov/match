@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Match agency - совпадение нашего опыта и ваших ожиданий</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="body body_black">
+  ${require('./common.blocks/cursor/cursor.html')}
+
+  <header class="header header_black">
+    <div class="container">
+      <div class="header__container">
+        <a href="/" class="logo">
+          <svg class="logo__svg">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+
+        <div class="header__sidebar">
+          <a href="tel:+79273903577" class="header__phone">+7 927 390-35-77</a>
+
+          <div class="header__btn">
+            ${require('./common.blocks/btn/btn_secondary.html')}
+          </div>
+
+          <button class="burger-btn js-burger-btn">
+            <span class="burger-btn__row"></span>
+            <span class="burger-btn__row"></span>
+            <span class="burger-btn__row"></span>
+          </button>
+
+          <button class="burger-btn burger-btn_close js-burger-btn-close">
+            <span class="burger-btn__row"></span>
+            <span class="burger-btn__row"></span>
+            <span class="burger-btn__row"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="decoration-block decoration-block_hidden decoration-block_menu"></div>
+  </header>
+
+  <main class="main">
+    <section class="page-section page-section_black page-section_huge_bottom">
+      <div class="container">
+        <h1 class="title title_h1 title_white wow" data-wow-duration="1s">Наши проекты</h1>
+
+        <div class="hashtags wow" data-wow-duration="1s">
+          <div class="hashtags__form">
+            <ul class="hashtags__list">
+              <li class="hashtags__item">
+                <input id="hash_1" type="checkbox" class="hashtags__checkbox">
+                <label for="hash_1" class="hashtags__text is-active">
+                  Все проекты
+                  <svg width="100%" height="100%" class="svg-gradient">
+                    <use xlink:href="#gradient"></use>
+                  </svg>
+                </label>
+              </li>
+
+              <li class="hashtags__item">
+                <input id="hash_2" type="checkbox" class="hashtags__checkbox">
+                <label for="hash_2" class="hashtags__text">
+                  Интернет-магазин
+                  <svg width="100%" height="100%" class="svg-gradient">
+                    <use xlink:href="#gradient"></use>
+                  </svg>
+                </label>
+              </li>
+
+              <li class="hashtags__item">
+                <input id="hash_3" type="checkbox" class="hashtags__checkbox">
+                <label for="hash_3" class="hashtags__text">
+                  Корпоративный сайт
+                  <svg width="100%" height="100%" class="svg-gradient">
+                    <use xlink:href="#gradient"></use>
+                  </svg>
+                </label>
+              </li>
+
+              <li class="hashtags__item">
+                <input id="hash_4" type="checkbox" class="hashtags__checkbox">
+                <label for="hash_4" class="hashtags__text">
+                  Интернет портал
+                  <svg width="100%" height="100%" class="svg-gradient">
+                    <use xlink:href="#gradient"></use>
+                  </svg>
+                </label>
+              </li>
+
+              <li class="hashtags__item">
+                <input id="hash_5" type="checkbox" class="hashtags__checkbox">
+                <label for="hash_5" class="hashtags__text">
+                  Мобильное приложение
+                  <svg width="100%" height="100%" class="svg-gradient">
+                    <use xlink:href="#gradient"></use>
+                  </svg>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="projects">
+        <div class="decoration-block decoration-block_center_left"></div>
+
+        <ul class="projects__list">
+          <li class="projects__item wow" data-wow-duration="1s">
+            <a href="project-page.html" class="projects__link js-data-hover">
+              <div class="projects__wrapper">
+                <div class="container">
+                  <div class="projects__desc-block">
+                    <div class="title title_block title_white_reverse">Интернет-магазин</div>
+
+                    <h3 class="projects__heading projects__heading_white_reverse">Сеть ювелирных салонов
+                      <span class="projects__subtitle">«GRAF КОЛЬЦОВ»</span>
+                    </h3>
+
+                    <span class="link link_white_reverse projects__btn">
+                      Смотреть
+
+                      <svg class="link__svg link__svg_white_reverse">
+                        <use xlink:href="#link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="container container_mobile">
+                  <div class="projects__img-block js-data-client" style="background: #EAE3DB;">
+                    ${require('./common.blocks/parallax-block-1/parallax-block-1.html')}
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="projects__item wow" data-wow-duration="1s">
+            <a href="project-page.html" class="projects__link js-data-hover">
+              <div class="projects__wrapper">
+                <div class="container">
+                  <div class="projects__desc-block">
+                    <div class="title title_block title_white">Корпоративный сайт</div>
+
+                    <h3 class="projects__heading">Салон мототехники
+                      <span class="projects__subtitle">«Мотор»</span>
+                    </h3>
+
+                    <span class="link projects__btn">
+                      Смотреть
+                      <svg class="link__svg">
+                        <use xlink:href="#link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="container container_mobile">
+                  <div class="projects__img-block js-data-client"
+                    style="background: url('./project_2/project_2.jpg') center / cover no-repeat">
+                    <div class="parallax-block-1">
+                      <div class="parallax-block-1__inner parallax-block-1__inner_padding ">
+                        <img class="parallax-block-1__img-bg js-parallax" src="../src/static/project_2/p_2_bg_1.png"
+                          alt="#">
+                        <img class="parallax-block-1__img-bg parallax-block-1__img-bg_fix_width js-parallax"
+                          src="../src/static/project_2/p_2_bg_2.png" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="projects__item wow" data-wow-duration="1s">
+            <a href="project-page.html" class="projects__link js-data-hover">
+              <div class="projects__wrapper">
+                <div class="container">
+                  <div class="projects__desc-block">
+                    <div class="title title_block title_white">Корпоративный сайт</div>
+
+                    <h3 class="projects__heading">Агентство недвижимости
+                      <span class="projects__subtitle">«Риэлтор»</span>
+                    </h3>
+
+                    <span class="link projects__btn">
+                      Смотреть
+                      <svg class="link__svg">
+                        <use xlink:href="#link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="container container_mobile">
+                  <div class="projects__img-block js-data-client"
+                    style="background: url('./project_3/project_3.jpg') center / cover no-repeat;">
+                    <div class="parallax-block-1">
+                      <div class="parallax-block-1__outer"
+                        style="background: url('./project_3/p_3_bg_1.png') center bottom / contain no-repeat; width: 100%; height: 100%;">
+                      </div>
+
+                      <div class="parallax-block-1__inner parallax-block-1__inner_padding">
+                        <img
+                          class="parallax-block-1__img-bg parallax-block-1__img-bg_z parallax-block-1__img-bg_fix_width parallax-block-1__img-bg_top js-parallax"
+                          src="../src/static/project_3/p_3_bg_3.svg" alt="#">
+
+                        <img
+                          class="parallax-block-1__img-bg parallax-block-1__img-bg_z parallax-block-1__img-bg_gif_mobile js-parallax"
+                          src="../src/static/project_3/p_3_bg_2.png" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="projects__item wow" data-wow-duration="1s">
+            <a href="project-page.html" class="projects__link js-data-hover">
+              <div class="projects__wrapper">
+                <div class="container">
+                  <div class="projects__desc-block">
+                    <div class="title title_block title_white">Интернет портал</div>
+
+                    <h3 class="projects__heading">Социальный портал
+                      <span class="projects__subtitle">Пензенской области</span>
+                    </h3>
+
+                    <span class="link projects__btn">
+                      Смотреть
+                      <svg class="link__svg">
+                        <use xlink:href="#link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+
+                </div>
+                <div class="container container_mobile">
+                  <div class="projects__img-block js-data-client"
+                    style="background: url('./project_4/project_4.jpg') center / cover no-repeat">
+                    <div class="parallax-block-1">
+                      <div class="parallax-block-1__inner parallax-block-1__inner_padding ">
+                        <img class="parallax-block-1__img-bg parallax-block-1__img-bg_full js-parallax"
+                          src="../src/static/project_4/p_4_bg_1.png" alt="#">
+                        <div class="parallax-block-1__outer parallax-block-1__outer_fill"
+                          style="background: url('./project_4/p_4_bg_2.png') center / contain no-repeat;">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="projects__item wow" data-wow-duration="1s">
+            <a href="project-page.html" class="projects__link projects__link_scale js-data-hover" data-hover>
+              <div class="projects__wrapper">
+                <div class="container">
+                  <div class="projects__desc-block">
+                    <div class="title title_block title_white">Корпоративный сайт</div>
+
+                    <h3 class="projects__heading">Салон кухни
+                      <span class="projects__subtitle">«Нестандартные кухни»</span>
+                    </h3>
+
+                    <span class="link projects__btn">
+                      Смотреть
+                      <svg class="link__svg">
+                        <use xlink:href="#link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="container container_mobile">
+                  <div class="projects__img-block">
+                    <div class="parallax-block-1">
+                      <div class="parallax-block-1__inner parallax-block-1__inner_scale"
+                        style="background: url('./project_5/project_5.jpg') center right / cover no-repeat">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+
+          <li class="projects__item wow" data-wow-duration="1s">
+            <a href="project-page.html" class="projects__link js-data-hover">
+              <div class="projects__wrapper">
+                <div class="container">
+                  <div class="projects__desc-block">
+                    <div class="title title_block title_white">Интернет-магазин</div>
+
+                    <h3 class="projects__heading">Сеть табачных изделий
+                      <span class="projects__subtitle">«Алькапоне»</span>
+                    </h3>
+
+                    <span class="link projects__btn">
+                      Смотреть
+                      <svg class="link__svg">
+                        <use xlink:href="#link-arrow"></use>
+                      </svg>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="container container_mobile">
+                  <div class="projects__img-block js-data-client" style="background: #432A25">
+                    <div class="parallax-block-1">
+                      <div class="parallax-block-1__outer parallax-block-1__outer_scale">
+                        <img class="parallax-block-1__img-bg parallax-block-1__img-bg_over js-parallax"
+                          src="../src/static/project_6/p_6_bg_3.png" alt="#">
+                      </div>
+                      <div class="parallax-block-1__inner ">
+                        <img
+                          class="parallax-block-1__img-bg  parallax-block-1__img-bg_z parallax-block-1__img-bg_fix_width js-parallax"
+                          src="../src/static/project_6/p_6_bg_1.png" alt="#">
+                        <img class="parallax-block-1__img-bg parallax-block-1__img-bg_z js-parallax"
+                          src="../src/static/project_6/p_6_bg_2.png" alt="#">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  ${require('./common.blocks/footer/footer.html')}
+
+  ${require('./common.blocks/menu/menu.html')}
+</body>
+
+</html>

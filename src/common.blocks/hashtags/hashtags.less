@@ -1,0 +1,87 @@
+@import (reference) "../../less/variables.less";
+
+.hashtags {
+	margin-bottom: 24px;
+
+	&__list {
+		margin: -16px -8px;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__item {
+		padding: 16px 8px;
+	}
+
+	&__checkbox {
+		display: none;
+	}
+
+	&__checkbox:checked + &__text {
+		background-position: -100% 100%;
+    color: #000;
+
+		&::after {
+			border-color: transparent;
+		}
+
+		.svg-gradient {
+			opacity: 1;
+		}
+	}
+
+	&__text {
+		position: relative;
+		color: @color-white;
+		font-size: 16px;
+		line-height: 1.7;
+		padding: 8px 16px;
+    // font-weight: 600;
+		vertical-align: middle;
+
+		background: @color-animation-white-gradient;
+		background-clip: text;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		overflow: hidden;
+		background-size: 200%;
+		background-position: 0;
+		transition: background-position @transition;
+
+		&::after {
+			position: absolute;
+			content: "";
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			border: 2px solid @color-white;
+			border-radius: 4px;
+			transition: border-color @transition;
+		}
+
+		.svg-gradient {
+			opacity: 0;
+			transition: opacity @transition;
+		}
+
+		&:hover,
+		&.is-active {
+			background-position: -100% 100%;
+
+			&::after {
+				border-color: transparent;
+			}
+
+			.svg-gradient {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+@media (min-width: @laptop) {
+	.hashtags {
+		margin-bottom: 48px;
+	}
+}

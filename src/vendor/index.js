@@ -63,3 +63,6 @@
 
 // normalize.css
 require('normalize.css/normalize.css');
+
+// wow
+require("expose-loader?WOW!wow.js");
