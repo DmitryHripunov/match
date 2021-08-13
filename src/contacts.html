@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Match agency - совпадение нашего опыта и ваших ожиданий</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="body body_black">
+  ${require('./common.blocks/cursor/cursor.html')}
+
+  <header class="header header_black">
+    <div class="container">
+      <div class="header__container">
+        <a href="/" class="logo">
+          <svg class="logo__svg">
+            <use xlink:href="#logo"></use>
+          </svg>
+        </a>
+
+        <div class="header__sidebar">
+          <a href="tel:+79273903577" class="header__phone">+7 927 390-35-77</a>
+
+          <div class="header__btn">
+            ${require('./common.blocks/btn/btn_secondary.html')}
+          </div>
+
+          <button class="burger-btn js-burger-btn">
+            <span class="burger-btn__row"></span>
+            <span class="burger-btn__row"></span>
+            <span class="burger-btn__row"></span>
+          </button>
+
+          <button class="burger-btn burger-btn_close js-burger-btn-close">
+            <span class="burger-btn__row"></span>
+            <span class="burger-btn__row"></span>
+            <span class="burger-btn__row"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="decoration-block decoration-block_hidden decoration-block_menu"></div>
+  </header>
+
+  <main class="main">
+    <div class="slogan slogan_no_mb">
+      <div class="slogan__wrapper">
+        <div class="slogan__marquee-right">
+          <div class="slogan__text">
+            Match agency
+          </div>
+        </div>
+
+        <div class="slogan__marquee-right">
+          <div class="slogan__text">
+            Match agency
+          </div>
+        </div>
+
+        <div class="slogan__marquee-right">
+          <div class="slogan__text">
+            Match agency
+          </div>
+        </div>
+
+        <div class="slogan__marquee-right">
+          <div class="slogan__text">
+            Match agency
+          </div>
+        </div>
+        
+        <div class="slogan__marquee-right">
+          <div class="slogan__text">
+            Match agency
+          </div>
+        </div>
+      </div>
+
+      <div class="slogan__wrapper">
+        <div class="slogan__marquee-left">
+          <div class="slogan__text">
+            совпадение нашего опыта и ваших ожиданий
+          </div>
+        </div>
+
+        <div class="slogan__marquee-left">
+          <div class="slogan__text">
+            совпадение нашего опыта и ваших ожиданий
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-section page-section_black page-section_huge_bottom">
+      <div class="container">
+        <div class="contacts">
+          <div class="contacts__wrapper">
+            <address class="address">
+              <div class="contacts__address">
+                <div class="address__city">
+                  <a href="mailto:info@matchagency.ru" class="address__mail">info@matchagency.ru</a>
+
+                  <div class="address__city-location address__city-location_bold">г. Санкт-Петербург, ул. Дружбы, 7</div>
+                  <div class="address__city-location address__city-location_bold">г. Пенза, ул. Дружбы, 6</div>
+                </div>
+
+                <div class="contacts__address-socials">
+
+                  <a href="tel:+79273903577" class="address__tel">+7 927 390-35-77</a>
+
+                  <div class="address__footnote">Или пишите в любой удобный мессенджер</div>
+
+                  ${require('./common.blocks/social-links/social-links.html')}
+                </div>
+              </div>
+            </address>
+
+            <div class="contacts__form">
+              ${require('./common.blocks/form/form.html')}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  ${require('./common.blocks/menu/menu.html')}
+</body>
+
+</html>

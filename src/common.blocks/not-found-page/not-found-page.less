@@ -1,0 +1,33 @@
+@import (reference) "../../less/variables.less";
+.not-found-page {
+	text-align: center;
+  font-size: 16px;
+
+	&__main,
+	&__title,
+	&__desc {
+		margin-bottom: 24px;
+	}
+
+	&__main {
+		background: @color-yellow-gradient;
+		background-clip: text;
+		-webkit-background-clip: text;
+		font-size: 80px;
+		line-height: 1.2;
+		-webkit-text-fill-color: transparent;
+		text-transform: uppercase;
+	}
+
+	&__title {
+		font-size: 32px;
+		line-height: 130%;
+    max-width: 520px;
+    margin: 0 auto 24px;
+	}
+}
+
+@media (min-width: @laptop) {
+	.not-found-page {
+	}
+}

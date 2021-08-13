@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', () => {
       ease: 'power1',
     };
 
-    tl.set('.decoration-block', {
-      opacity: 0,
-      delay: 0,
+    // tl.set('.decoration-block', {
+    //   opacity: 0,
+    //   delay: 0,
+    // })
+    tl.set('.body', {
+      className: 'no-scrolling',
     })
-      .set('.body', {
-        className: 'no-scrolling',
-      })
       .set('.burger-btn', {
         className: 'burger-btn is-hidden',
       })
@@ -39,8 +39,9 @@ document.addEventListener('DOMContentLoaded', () => {
         '.js-item-2',
         '.js-item-3',
         '.js-item-4',
-        '.social-links',
-        '.menu__mail-link',
+        '.social-links__link_telegram',
+        '.social-links__link_whatsap',
+        '.social-links__link_viber',
         '.menu__tel-link',
       ], {
         opacity: 0,
@@ -71,15 +72,18 @@ document.addEventListener('DOMContentLoaded', () => {
       })
       .to('.menu__mail-link', options)
       .to('.menu__tel-link', options)
-      .to('.social-links', options)
-      .to('.decoration-block', {
-        opacity: 1,
-        delay: 0,
-        duration: 0.02,
-        ease: 'linear',
-      });
+      .to('.social-links__link_telegram', options)
+      .to('.social-links__link_whatsap', options)
+      .to('.social-links__link_viber', options);
+    // .to('.decoration-block', {
+    //   opacity: 1,
+    //   delay: 0,
+    //   duration: 0.02,
+    //   ease: 'linear',
+    // });
     closeMenu.addEventListener('click', () => {
-      tl.reverse();
+      tl.timeScale(5)
+        .reverse();
     });
   });
 });

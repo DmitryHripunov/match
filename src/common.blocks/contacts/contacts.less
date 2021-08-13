@@ -1,0 +1,33 @@
+@import (reference) "../../less/variables.less";
+
+.contacts {
+	color: @color-white;
+
+	&__address {
+		// display: flex;
+	}
+
+	&__address-socials {
+		display: flex;
+		flex-direction: column;
+    margin: 24px 0;
+	}
+}
+
+@media (min-width: @desktop) {
+	.contacts {
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__address {
+			width: 100%;
+      display: flex;
+		}
+
+		&__address-socials {
+			margin: 0 calc((190 / 1920) * 100vw);
+		}
+	}
+}

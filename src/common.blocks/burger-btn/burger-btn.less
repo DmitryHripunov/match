@@ -4,7 +4,6 @@
   position: relative;
   background-color: transparent;
   border: none;
-  // cursor: pointer;
 
   &__row {
     display: block;
@@ -51,6 +50,16 @@
       }
     }
    }
+
+  &:hover:not(.is-active) {
+    .burger-btn__row:last-child {
+      transform: translateY(2px);
+    }
+
+    .burger-btn__row:first-child {
+      transform: translateY(-2px);
+    }
+  }
 
    &.is-hidden {
      display: none;

@@ -15,17 +15,8 @@
 	&_top_left {
 		max-width: 250px;
 		height: 250px;
-		top: -150px;
+		top: 50px;
 		left: -150px;
-	}
-
-	&_center {
-		max-width: 250px;
-		height: 250px;
-		top: 50%;
-		transform: translateY(-50%);
-		left: -90px;
-		z-index: -1;
 	}
 
 	&_right_bottom {
@@ -35,12 +26,20 @@
 		right: -90px;
 		z-index: 1;
 	}
-
-	&_center_left {
+	
+	&_left_bottom {
 		max-width: 250px;
 		height: 250px;
-		top: 50px;
-		left: -90px;
+		bottom: 25px;
+		left: -150px;
+		z-index: 1;
+	}
+
+	&_main_top {
+		max-width: 250px;
+		height: 250px;
+		top: -150px;
+		left: -150px;
 		z-index: -1;
 	}
 
@@ -66,15 +65,14 @@
 		&_top_left {
 			max-width: 770px;
 			height: 770px;
-			top: -400px;
+			top: 0px;
 			left: -400px;
 		}
 
-		&_center {
+		&_main_top {
 			max-width: 770px;
 			height: 770px;
-			top: 50%;
-			transform: translateY(-50%);
+			top: -400px;
 			left: -400px;
 			z-index: -1;
 		}
@@ -84,6 +82,13 @@
 			height: 710px;
 			bottom: -50px;
 			right: -300px;
+		}
+
+		&_left_bottom {
+			max-width: 710px;
+			height: 710px;
+			bottom: -50px;
+			left: -400px;
 		}
 
 		&_center_right {
