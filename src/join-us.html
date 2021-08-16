@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Match agency - совпадение нашего опыта и ваших ожиданий</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body class="body">
+  ${require('./common.blocks/cursor/cursor.html')}
+
+  ${require('./common.blocks/header/header.html')}
+
+  <main class="main">
+    <section class="page-section page-section_huge_bottom">
+      <div class="decoration-block decoration-block_right_bottom"></div>
+
+      <div class="container container_small">
+        <div class="join-us">
+          <div class="join-us__wrapper">
+            <div class="join-us__inner">
+              <h1 class="join-us__heading">
+                Перед началом работы хотим узнать о вас побольше
+              </h1>
+
+              <ul class="join-us__list">
+                <li class="join-us__item">
+                  <h2 class="join-us__subtitle">Чем вы занимаетесь?</h2>
+                  <span class="join-us__desc">Расскажите о своей компании. Как работаете, на чем зарабатываете?</span>
+                </li>
+
+                <li class="join-us__item">
+                  <h2 class="join-us__subtitle">Кто ваши конкуренты?</h2>
+                  <span class="join-us__desc">Чем вы от них отличаетесь?</span>
+                </li>
+
+                <li class="join-us__item">
+                  <h2 class="join-us__subtitle">В чем ваша задача?</h2>
+                  <span class="join-us__desc">Чего хотите достичь в ближайшем будущем?</span>
+                </li>
+
+                <li class="join-us__item">
+                  <h2 class="join-us__subtitle">Каким вы видите решение задачи?</h2>
+                  <span class="join-us__desc">Как планируете достичь своих целей? Какие решения пробовали раньше?</span>
+                </li>
+
+                <li class="join-us__item">
+                  <h2 class="join-us__subtitle">Какие у вас ожидания от результата?</h2>
+                  <span class="join-us__desc">В каком виде вы хотите видеть решение вашей задачи? В какой срок?</span>
+                </li>
+
+                <li class="join-us__item">
+                  <h2 class="join-us__subtitle">Почему он важен?</h2>
+                  <span class="join-us__desc">На что это должно быть похоже?</span>
+                </li>
+
+                <li class="join-us__item">
+                  <h2 class="join-us__subtitle">Сколько денег планируете потратить?</h2>
+                  <span class="join-us__desc">Каков ваш бюджет? Почему вы готовы потратить именно такую сумму?</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="join-us__inner">
+              <div class="join-us__desc-form">
+                Ваши ответы — лучшая заявка для нас. На их основе мы поймем, чем сможем быть полезны: соберем информацию
+                и подготовимся
+                ко встрече. Так наш первый разговор будет предметным.
+              </div>
+
+              <form class="form js-form form_white_bg">
+                <ul class="form__list">
+                  <li class="form__item">
+                    <textarea id="about" placeholder="Опишите ваш проект" class="form__textarea form__textarea_field js-input"></textarea>
+
+                    <label for="about" class="form__label form__label_textarea "></label>
+
+                    <!-- важно 3 дочерний элемент. -->
+                    <div class="form__item-decoration"></div>
+
+                    <span class="help-block">Телефон</span>
+                  </li>
+
+                  <li class="form__item">
+                    <input id="full_name" class="form__input js-input" type="text">
+
+                    <label for="full_name" class="form__label">Как к вам обращаться?</label>
+
+                    <!-- важно 3 дочерний элемент. -->
+                    <div class="form__item-decoration"></div>
+
+                    <span class="help-block">Телефон</span>
+                  </li>
+
+                  <li class="form__item has-success">
+                    <input id="mail" class="form__input js-input" type="email">
+
+                    <label for="mail" class="form__label">Электронная почта</label>
+
+                    <!-- важно 3 дочерний элемент. -->
+                    <div class="form__item-decoration"></div>
+
+                    <span class="help-block">Электронная почта</span>
+                  </li>
+
+                  <li class="form__item has-error">
+                    <input id="phone" class="form__input js-input" type="tel">
+
+                    <label for="phone" class="form__label">Телефон</label>
+
+                    <!-- важно 3 дочерний элемент. -->
+                    <div class="form__item-decoration"></div>
+
+                    <div class="form__item-decoration"></div>
+
+                    <span class="help-block">Телефон</span>
+                  </li>
+                </ul>
+
+                <button class="form__submit btn btn_primary" type="submit">Отправить заявку</button>
+
+                <div class="form__footnote">
+                  Нажимая на кнопку, вы даете согласие на обработку
+                  <a href="#" class="form__footnote-link">персональных данных</a>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  ${require('./common.blocks/menu/menu.html')}
+</body>
+
+</html>

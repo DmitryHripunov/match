@@ -5,12 +5,19 @@
 // });
 
 // gsap.to('.slogan__marquee-right', {
-//   duration: 1,
+//   duration: 1.5,
 //   ease: 'none',
-//   x: '+=500',
+//   x: '+=100%',
 //   modifiers: {
-//     x: gsap.utils.unitize(x => parseFloat(x) % 500),
+//     x: gsap.utils.unitize(x => parseFloat(x) % 100),
 //   },
+//   repeat: -1,
+// });
+
+// gsap.to('.slogan__marquee-left', {
+//   duration: 3.5,
+//   ease: 'none',
+//   x: '+=-100%',
 //   repeat: -1,
 // });
 

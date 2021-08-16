@@ -1,8 +1,15 @@
 @import (reference) "../../less/variables.less";
 
 .form {
+	&_white_bg {
+		.form__input,
+		.form__textarea {
+			color: @color-black;
+		}
+	}
+
 	&__list {
-		margin-bottom: 24px;
+		margin-bottom: 32px;
 	}
 
 	&__item:not(:last-child) {
@@ -35,7 +42,7 @@
 
 	&__item.has-error {
 		.form__input,
-		.form__textarea { 
+		.form__textarea {
 			border-color: @color-red;
 		}
 
@@ -108,9 +115,8 @@
 			background: @color-red;
 		}
 
-		&:hover 
-		+ .form__label {
-		+	.form__item-decoration {
+		&:hover + .form__label {
+			+ .form__item-decoration {
 				transform: scaleX(1);
 			}
 		}
@@ -124,6 +130,15 @@
 		padding-top: 8px;
 		height: 32px;
 		transition: height .05s ease-in-out;
+
+		&_field {
+			overflow: visible;
+			height: 300px;
+			border: 2px solid @color-gray;
+			padding: 16px;
+
+
+		}
 	}
 
 	&__label {
@@ -169,6 +184,8 @@
 
 		&__submit {
 			margin-bottom: 24px;
+			padding-top: 16px;
+			padding-bottom: 16px;
 		}
 	}
 }

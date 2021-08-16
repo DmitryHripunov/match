@@ -1,6 +1,6 @@
 @import (reference) "../../less/variables.less";
 
-.video {
+.hero {
   max-width: 100%;
   width: 100%;
   object-fit: cover;
@@ -8,7 +8,11 @@
 }
 
 @media (min-width: @laptop) {
-  .video {
+  .hero {
     height: 990px;
+
+    &_height_850 {
+      height: 850px
+    }
   }
 }

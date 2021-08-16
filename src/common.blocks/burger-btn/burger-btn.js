@@ -27,7 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
         className: 'burger-btn burger-btn_close is-active',
       })
       .set('.js-menu', {
-        translateY: '-100%',
+        // translateY: '-100%',
         className: 'menu is-opened',
       })
       .set('.header', {
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
         ease: 'back',
       })
       .to('.js-menu', {
-        translateY: 0,
+        // translateY: 0,
         duration: 0.3,
         ease: 'power1',
       })

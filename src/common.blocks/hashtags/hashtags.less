@@ -11,15 +11,25 @@
 
 	&__item {
 		padding: 16px 8px;
+
+		&.is-active {
+			.hashtags__text {
+				background-position: -100% 100%;
+
+				&::after {
+					border-color: transparent;
+				}
+
+				.svg-gradient {
+					opacity: 1;
+				}
+			}
+		}
 	}
 
-	&__checkbox {
-		display: none;
-	}
-
-	&__checkbox:checked + &__text {
+	&__text {
 		background-position: -100% 100%;
-    color: #000;
+		color: #000;
 
 		&::after {
 			border-color: transparent;
@@ -36,7 +46,7 @@
 		font-size: 16px;
 		line-height: 1.7;
 		padding: 8px 16px;
-    // font-weight: 600;
+		// font-weight: 600;
 		vertical-align: middle;
 
 		background: @color-animation-white-gradient;

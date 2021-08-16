@@ -10,6 +10,19 @@
 	&__inner:first-child {
 		margin-bottom: 24px;
 	}
+
+	&__item {
+		font-family: 'Montserrat';
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 1.6;
+		display: flex;
+		align-items: center;
+	}
+
+	&__item:not(:last-child) {
+		margin-bottom: 16px;
+	}
 }
 
 @media (min-width: @laptop) {
@@ -18,6 +31,11 @@
 			font-size: 24px;
 			line-height: 150%;
 			margin-bottom: 56px;
+
+			&_inner {
+				margin-bottom: 40px;
+				max-width: 860px;
+			}
 		}
 
 		&__wrapper {
@@ -34,6 +52,10 @@
 		&__inner {
 			max-width: 570px;
 			width: 100%;
+		}
+
+		&__item:not(:last-child) {
+			margin-bottom: 8px;
 		}
 	}
 }

@@ -42,6 +42,16 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
+    [...document.querySelectorAll('label')].forEach((item) => {
+      item.addEventListener('mouseenter', () => {
+        follow.classList.add('is-hover');
+      });
+
+      item.addEventListener('mouseleave', () => {
+        follow.classList.remove('is-hover');
+      });
+    });
+
     [...document.querySelectorAll('textarea')].forEach((item) => {
       item.addEventListener('mouseenter', () => {
         follow.classList.add('is-hover');

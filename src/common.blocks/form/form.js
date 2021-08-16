@@ -13,12 +13,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  const textarea = document.querySelector('textarea');
+  const textarea = document.querySelector('.js-textarea');
   const textareaCountLength = document.querySelector('.js-textarea-count');
 
   function autosize(e) {
     const el = this;
-    // const elParent = el.closest('.form__item');
     setTimeout(() => {
       const lengthValue = e.target.value.length;
       textareaCountLength.textContent = lengthValue;
@@ -29,5 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 0);
   }
 
-  textarea.addEventListener('input', autosize);
+  if (textarea) {
+    textarea.addEventListener('input', autosize);
+  }
 });
