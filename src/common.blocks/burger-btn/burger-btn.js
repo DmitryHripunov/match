@@ -9,14 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const options = {
       opacity: 1,
       translateY: 0,
-      delay: -0.3,
+      delay: -0.4,
       ease: 'power1',
     };
 
-    // tl.set('.decoration-block', {
-    //   opacity: 0,
-    //   delay: 0,
-    // })
     tl.set('.body', {
       className: 'no-scrolling',
     })
@@ -66,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
       .to('.menu__footer', {
         opacity: 1,
         translateX: 0,
-        delay: -0.2,
+        delay: -0.3,
         duration: 0.3,
         ease: 'power1',
       })
@@ -75,12 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
       .to('.social-links__link_telegram', options)
       .to('.social-links__link_whatsap', options)
       .to('.social-links__link_viber', options);
-    // .to('.decoration-block', {
-    //   opacity: 1,
-    //   delay: 0,
-    //   duration: 0.02,
-    //   ease: 'linear',
-    // });
     closeMenu.addEventListener('click', () => {
       tl.timeScale(5)
         .reverse();

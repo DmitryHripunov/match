@@ -6,6 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Match agency - совпадение нашего опыта и ваших ожиданий</title>
+
+  <link rel="preload" href="./fonts/Montserrat-Black.woff" as="font">
+  <link rel="preload" href="./fonts/Montserrat-SemiBold.woff2" as="font">
+  <link rel="preload" href="./fonts/Montserrat-Regular.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsans.woff2" as="font">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="./fonts/PTSansPro-Black.woff2" as="font">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -74,7 +82,8 @@
               <form class="form js-form form_white_bg">
                 <ul class="form__list">
                   <li class="form__item">
-                    <textarea id="about" placeholder="Опишите ваш проект" class="form__textarea form__textarea_field js-input"></textarea>
+                    <textarea id="about" placeholder="Опишите ваш проект"
+                      class="form__textarea form__textarea_field js-input"></textarea>
 
                     <label for="about" class="form__label form__label_textarea "></label>
 
@@ -82,6 +91,10 @@
                     <div class="form__item-decoration"></div>
 
                     <span class="help-block">Телефон</span>
+
+                    <svg width="100%" height="100%" class="svg-gradient">
+                      <use xlink:href="#gradient"></use>
+                    </svg>
                   </li>
 
                   <li class="form__item">
@@ -95,7 +108,7 @@
                     <span class="help-block">Телефон</span>
                   </li>
 
-                  <li class="form__item has-success">
+                  <li class="form__item">
                     <input id="mail" class="form__input js-input" type="email">
 
                     <label for="mail" class="form__label">Электронная почта</label>
@@ -106,7 +119,7 @@
                     <span class="help-block">Электронная почта</span>
                   </li>
 
-                  <li class="form__item has-error">
+                  <li class="form__item">
                     <input id="phone" class="form__input js-input" type="tel">
 
                     <label for="phone" class="form__label">Телефон</label>

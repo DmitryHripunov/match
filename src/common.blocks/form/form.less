@@ -136,8 +136,21 @@
 			height: 300px;
 			border: 2px solid @color-gray;
 			padding: 16px;
+			transition: border-color @transition;
 
+			~ .svg-gradient {
+				opacity: 0;
+				transition: opacity @transition;
+			}
 
+			&:hover
+			~ .svg-gradient,
+			&:focus
+			~ .svg-gradient,
+			&.is-focused
+			~ .svg-gradient {
+					opacity: 1;
+				}
 		}
 	}
 

@@ -16,11 +16,11 @@
 	}
 
 	&__marquee-right {
-		animation: marquee-right 2s cubic-bezier(0, 0, 0, 0) infinite;
+		animation: marquee-right 10s cubic-bezier(0, 0, 0, 0) infinite;
 	}
 
 	&__marquee-left {
-		animation: marquee-left 10s linear infinite;
+		animation: marquee-left 20s linear infinite;
 	}
 
 	&__text {
@@ -69,7 +69,7 @@
 @keyframes marquee-left {
 	0% {
 		transform: translateX(0%);
-		transform-origin: center;
+		transform-origin: left center;
 	}
 	100% {
 		transform: translateX(-100%);
@@ -79,7 +79,7 @@
 @keyframes marquee-right {
 	0% {
 		transform: translateX(-100%);
-		transform-origin: center;
+		transform-origin: left center;
 		
 	}
 	100% {

@@ -5,10 +5,9 @@
 	pointer-events: none;
 	z-index: -10;
 	width: 100%;
-  background: url("img/pd_bg_1.svg") center / contain no-repeat;
+	background: url("img/pd_bg_1.svg") center / contain no-repeat;
 
-
-  &_hidden {
+	&_hidden {
 		display: none;
 	}
 
@@ -23,10 +22,21 @@
 		max-width: 250px;
 		height: 250px;
 		bottom: 25px;
-		right: -90px;
+		right: 0;
 		z-index: 1;
+		background: url("img/pd_bg_2.svg") center right / contain no-repeat;
 	}
-	
+
+	&_center_right {
+		max-width: 250px;
+		height: 250px;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 0;
+		z-index: -1;
+		background: url("img/pd_bg_2.svg") center right / contain no-repeat;
+	}
+
 	&_left_bottom {
 		max-width: 250px;
 		height: 250px;
@@ -42,24 +52,16 @@
 		left: -150px;
 		z-index: -1;
 	}
-
-	&_center_right {
-		max-width: 250px;
-		height: 250px;
-		top: 50%;
-		transform: translateY(-50%);
-		right: -90px;
-		z-index: -1;
-	}
 }
 
 @media (min-width: @laptop) {
 	.decoration-block {
 		&_menu {
 			top: 50vh;
-			right: -50%;
+			right: 0;
 			transform: translateY(-50%);
 			height: 100vh;
+			background: url("img/pd_bg_2.svg") center right / contain no-repeat;
 		}
 
 		&_top_left {
@@ -81,7 +83,11 @@
 			max-width: 710px;
 			height: 710px;
 			bottom: -50px;
-			right: -300px;
+		}
+
+		&_center_right {
+			max-width: 710px;
+			height: 710px;
 		}
 
 		&_left_bottom {
@@ -89,12 +95,6 @@
 			height: 710px;
 			bottom: -50px;
 			left: -400px;
-		}
-
-		&_center_right {
-			max-width: 710px;
-			height: 710px;
-			right: -300px;
 		}
 
 		&_center_left {
