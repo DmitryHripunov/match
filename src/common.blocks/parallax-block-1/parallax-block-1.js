@@ -38,6 +38,13 @@ document.addEventListener('DOMContentLoaded', () => {
             `transform: translate(${offsetX1}px, ${offsetY1}px);`,
           );
         }
+
+        if (parallax[3]) {
+          parallax[3].setAttribute(
+            'style',
+            `transform: translate(${offsetX1}px, ${offsetY1}px);`,
+          );
+        }
       });
 
       link.addEventListener('mouseleave', () => {

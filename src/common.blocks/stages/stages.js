@@ -111,7 +111,7 @@ if (document.querySelector('[note]')) {
       osc.frequency.value = freq;
     }
 
-    keys[key].element.classList.add('pressed');
+    // keys[key].element.classList.add('pressed');
     pressedNotes.set(key, osc);
     pressedNotes.get(key).start();
   };
@@ -121,7 +121,7 @@ if (document.querySelector('[note]')) {
       return;
     }
 
-    keys[key].element.classList.remove('pressed');
+    // keys[key].element.classList.remove('pressed');
     const osc = pressedNotes.get(key);
 
     if (osc) {
@@ -133,38 +133,45 @@ if (document.querySelector('[note]')) {
     }
   };
 
-  document.addEventListener('keydown', (e) => {
-    const eventKey = e.key.toUpperCase();
-    const key = eventKey === ';' ? 'semicolon' : eventKey;
+  // document.addEventListener('keydown', (e) => {
+  //   const eventKey = e.key.toUpperCase();
+  //   const key = eventKey === ';' ? 'semicolon' : eventKey;
 
-    if (!key || pressedNotes.get(key)) {
-      return;
-    }
-    playKey(key);
-  });
+  //   if (!key || pressedNotes.get(key)) {
+  //     return;
+  //   }
+  //   playKey(key);
+  // });
 
-  document.addEventListener('keyup', (e) => {
-    const eventKey = e.key.toUpperCase();
-    const key = eventKey === ';' ? 'semicolon' : eventKey;
+  // document.addEventListener('keyup', (e) => {
+  //   const eventKey = e.key.toUpperCase();
+  //   const key = eventKey === ';' ? 'semicolon' : eventKey;
 
-    if (!key) {
-      return;
-    }
-    stopKey(key);
-  });
+  //   if (!key) {
+  //     return;
+  //   }
+  //   stopKey(key);
+  // });
 
   // eslint-disable-next-line no-restricted-syntax
   for (const [key, { element }] of Object.entries(keys)) {
     if (element) {
       // eslint-disable-next-line no-loop-func
-      element.addEventListener('mousedown', () => {
+      element.addEventListener('mouseenter', () => {
         playKey(key);
         clickedKey = key;
       });
+      // element.addEventListener('mousedown', () => {
+      //   playKey(key);
+      //   clickedKey = key;
+      // });
     }
   }
 
-  document.addEventListener('mouseup', () => {
+  document.addEventListener('mouseout', () => {
     stopKey(clickedKey);
   });
+  // document.addEventListener('mouseup', () => {
+  //   stopKey(clickedKey);
+  // });
 }

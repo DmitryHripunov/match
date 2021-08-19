@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('mousemove', (e) => {
       gsap.to(cursor, 0, { x: e.clientX, y: e.clientY });
-      gsap.to(follow, 0.6, { x: e.clientX, y: e.clientY });
+      gsap.to(follow, 0.3, { x: e.clientX, y: e.clientY });
     });
 
     [...document.querySelectorAll('a')].forEach((item) => {

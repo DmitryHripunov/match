@@ -75,6 +75,12 @@ document.addEventListener('DOMContentLoaded', () => {
       tl.timeScale(5)
         .reverse();
     });
+    document.addEventListener('keydown', (e) => {
+      if (e.target === 'Escape' || e.target === 'Esc' || e.keyCode === 27) {
+        tl.timeScale(5)
+          .reverse();
+      }
+    });
   });
 });
 
