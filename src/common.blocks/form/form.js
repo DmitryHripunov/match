@@ -1,11 +1,20 @@
+import Inputmask from 'inputmask';
+
 document.addEventListener('DOMContentLoaded', () => {
   const inputs = document.querySelectorAll('.js-input');
+  const im = new Inputmask('+7 (999) 999-99-99', { showMaskOnHover: false });
 
   inputs.forEach((input) => {
+    const phoneInputs = document.querySelectorAll("input[type='tel']");
+
+    phoneInputs.forEach((mask) => {
+      im.mask(mask);
+    });
+
     input.addEventListener('change', (e) => {
       const currentInput = e.currentTarget;
       if (currentInput.value.trim().length < 1) {
-        currentInput.value = null;
+        currentInput.value = {};
         currentInput.classList.remove('is-focused');
       } else {
         currentInput.classList.add('is-focused');

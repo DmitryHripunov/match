@@ -57,6 +57,16 @@
 		}
 	}
 
+	&__input:-webkit-autofill,
+  &__input:-webkit-autofill:hover,
+  &__input:-webkit-autofill:active,
+  &__input:-webkit-autofill:focus {
+    background-color: transparent !important;
+    color: @color-white !important;
+    box-shadow: 0 0 0 1000px @color-black inset !important;
+    -webkit-text-fill-color: @color-white !important;
+  }
+
 	&__input,
 	&__textarea {
 		font: 400 16px "ptsans";
